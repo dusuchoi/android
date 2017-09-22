@@ -1,0 +1,7 @@
+#Fri Sep 22 01:12:23 KST 2017
+base.0=C\:\\Users\\dusu\\Desktop\\MosquitoForecast\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_a436e2eddc121df209fc1a534929c0c4c922bae8
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\dusu\\Desktop\\MosquitoForecast\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ee5b5f146ff57fa828b0aabfc63ea6c3d6bcaf7a\\classes.dex
+base.1=C\:\\Users\\dusu\\Desktop\\MosquitoForecast\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ee5b5f146ff57fa828b0aabfc63ea6c3d6bcaf7a
+file.0=C\:\\Users\\dusu\\Desktop\\MosquitoForecast\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_a436e2eddc121df209fc1a534929c0c4c922bae8\\classes.dex

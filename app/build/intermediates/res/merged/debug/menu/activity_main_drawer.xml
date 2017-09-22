@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mosquito"
+            android:icon="@android:drawable/btn_default"
+            android:title="모기예보"
+            app:font="custom1" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@android:drawable/btn_star"
+            android:title="생활지수"
+            app:font="custom1" />
+
+        <item
+            android:id="@+id/nav_mosquitoExpression"
+            android:icon="@drawable/ic_menu_send"
+            android:title="모기예보제란"
+            app:font="custom1" />
+    </group>
+
+</menu>

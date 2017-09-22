@@ -1,0 +1,155 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:2:1-53:12
+	package
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:6:22-76
+application
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:8:5-51:19
+MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\dusu\.android\build-cache\203faf7cd1f7e524ca0bcd09bf9cfe1bcf6a22e8\output\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dusu\.android\build-cache\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dusu\.android\build-cache\7d44bade4e11a8b02d47ba4f2092945257369104\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dusu\.android\build-cache\634a01a88de5cb50ee348249d613992e0d88a935\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dusu\.android\build-cache\1e56caab61e7eae142e2018820deabfa1f6f23a4\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\dusu\.android\build-cache\a1077e87b8770d1c81b199f6f64c07b24389dcfd\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dusu\.android\build-cache\4bd5ad360e3ef0bb2dbec389e7057802b11b96e8\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dusu\.android\build-cache\46fcb50ead3ec713a3b71a395d6e1696056fbc8b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dusu\.android\build-cache\b8d903ce29c2238036f9c58c76f4828a65a3b1b1\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dusu\.android\build-cache\31ba0b173b0652454c0e23b517ed1428df859c4d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dusu\.android\build-cache\9fc4347bc10dd0314729de0d6b149ec535e8a2c3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dusu\.android\build-cache\99426aa294b068bec9a470aefde1a64f6d8e74a2\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:12:9-41
+	android:supportsRtl
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:14:9-35
+	android:roundIcon
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:13:9-50
+	android:allowBackup
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:10:9-35
+	android:icon
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:11:9-45
+	android:theme
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:15:9-40
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:9:9-40
+activity#kr.cds.mosquitoforecast.MainActivity
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:16:9-35:20
+	android:screenOrientation
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:18:13-49
+	android:theme
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:19:13-56
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:17:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:23:27-74
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:25:13-34:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:28:17-76
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:28:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:29:17-78
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:29:27-75
+data
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:31:17-33:61
+	android:host
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:32:21-58
+	android:scheme
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:33:21-58
+meta-data#com.kakao.sdk.AppKey
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:37:9-39:53
+	android:value
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:39:13-50
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:38:13-48
+receiver#kr.cds.mosquitoforecast.mosquitoAppWidget
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:41:9-49:20
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:41:19-52
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:42:13-44:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:43:17-84
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:43:25-81
+meta-data#android.appwidget.provider
+ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:46:13-48:68
+	android:resource
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:48:17-65
+	android:name
+		ADDED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml:47:17-58
+uses-sdk
+INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\dusu\.android\build-cache\203faf7cd1f7e524ca0bcd09bf9cfe1bcf6a22e8\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dusu\.android\build-cache\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dusu\.android\build-cache\7d44bade4e11a8b02d47ba4f2092945257369104\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dusu\.android\build-cache\634a01a88de5cb50ee348249d613992e0d88a935\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\dusu\.android\build-cache\f526c85abb8b06a76cd788e5eda4dd869eebf20d\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dusu\.android\build-cache\1e56caab61e7eae142e2018820deabfa1f6f23a4\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\dusu\.android\build-cache\a1077e87b8770d1c81b199f6f64c07b24389dcfd\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dusu\.android\build-cache\4bd5ad360e3ef0bb2dbec389e7057802b11b96e8\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dusu\.android\build-cache\46fcb50ead3ec713a3b71a395d6e1696056fbc8b\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dusu\.android\build-cache\b8d903ce29c2238036f9c58c76f4828a65a3b1b1\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dusu\.android\build-cache\31ba0b173b0652454c0e23b517ed1428df859c4d\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dusu\.android\build-cache\9fc4347bc10dd0314729de0d6b149ec535e8a2c3\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dusu\.android\build-cache\99426aa294b068bec9a470aefde1a64f6d8e74a2\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\dusu\.android\build-cache\25199f03e1f78b94380a8237970718846de9bb52\output\AndroidManifest.xml:11:5-13:41
+MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\dusu\.android\build-cache\5de820354788041deecd45c96a5f8e77e2f52ea5\output\AndroidManifest.xml:11:5-13:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dusu\Desktop\MosquitoForecast\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dusu\.android\build-cache\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dusu\.android\build-cache\7d44bade4e11a8b02d47ba4f2092945257369104\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dusu\.android\build-cache\634a01a88de5cb50ee348249d613992e0d88a935\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\dusu\.android\build-cache\f526c85abb8b06a76cd788e5eda4dd869eebf20d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dusu\.android\build-cache\1e56caab61e7eae142e2018820deabfa1f6f23a4\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dusu\.android\build-cache\4bd5ad360e3ef0bb2dbec389e7057802b11b96e8\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dusu\.android\build-cache\46fcb50ead3ec713a3b71a395d6e1696056fbc8b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dusu\.android\build-cache\b8d903ce29c2238036f9c58c76f4828a65a3b1b1\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dusu\.android\build-cache\31ba0b173b0652454c0e23b517ed1428df859c4d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dusu\.android\build-cache\9fc4347bc10dd0314729de0d6b149ec535e8a2c3\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dusu\.android\build-cache\99426aa294b068bec9a470aefde1a64f6d8e74a2\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:26:9-47
