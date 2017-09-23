@@ -9,9 +9,9 @@ public class ApplicationBase extends Application {      //폰트설정
         super.onCreate();
 
 
-        Typekit.getInstance()
-                .addNormal(Typekit.createFromAsset(this,"SeoulNamsanM.ttf"))
-                .addBold(Typekit.createFromAsset(this,"SeoulNamsanB.ttf"));
+        Typekit.getInstance();
+                //.addNormal(Typekit.createFromAsset(this,"SeoulNamsanM.ttf"))
+                //.addBold(Typekit.createFromAsset(this,"SeoulNamsanB.ttf"));
 
     }
 

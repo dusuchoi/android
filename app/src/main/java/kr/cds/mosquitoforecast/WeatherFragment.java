@@ -62,7 +62,7 @@ public class WeatherFragment extends Fragment {
     private HeatLifeIndex heatLifeIndex;
     private ListView mListView = null;
     private ListViewAdapter mAdapter = null;
-    boolean threadEnd = true;
+    boolean threadEnd = false;
     String key;
     String queryUrlUltra;
     String queryUrlDspls;
@@ -126,6 +126,10 @@ public class WeatherFragment extends Fragment {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.refresh) {
+            String[] urls = {queryUrlUltra, queryUrlDspls, queryUrlFsn, queryUrlHeatLife};
+            for (int i = 0; i < 4; i++) {
+                thread(urls[i], date, i);
+            }
             mAdapter.notifyDataSetChanged();
             return (true);
         }
@@ -150,16 +154,13 @@ public class WeatherFragment extends Fragment {
                 if (checkInternet() == true) {
                     INTERNET_STATE = true;
                     if (pos == 0) {
-                        if(threadEnd ==true) {
                             thread(urls[pos], date, pos);
-                            new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, getDateStringToShowDay(showDate)).start();
-                        }
+                            new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, getDateStringToShowTime(showDate)).start();
+
                     }
                     if (pos == 1) {
-                        if(threadEnd ==true) {
                             thread(urls[pos], date, pos);
-                            new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, getDateStringToShowDay(showDate)).start();
-                        }
+                            new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, getDateStringToShowTime(showDate)).start();
                     }
                     if (pos == 2) {
                         if(threadEnd ==true) {
@@ -168,10 +169,8 @@ public class WeatherFragment extends Fragment {
                         }
                     }
                     if (pos == 3) {
-                        if (threadEnd == true) {
                             thread(urls[pos], date, pos);
                             new addThread(heatLifeIndex, "열지수", value[3], HEATLIFE_DIVIDE_VALUE, R.drawable.heatlife, getDateStringToShowTime(showDate)).start();
-                        }
                     }
                 }else{
                     Toast.makeText(getActivity(),"네트워크가 연결되지 않았습니다.", Toast.LENGTH_SHORT).show();
@@ -422,11 +421,12 @@ public class WeatherFragment extends Fragment {
         mAdapter = new ListViewAdapter(getContext());
         mListView.setAdapter(mAdapter);
 
-        String[] urls = {queryUrlUltra, queryUrlDspls, queryUrlFsn, queryUrlHeatLife};
+
 
         date = getDateString();
         loadPreferences();
 
+        String[] urls = {queryUrlUltra, queryUrlDspls, queryUrlFsn, queryUrlHeatLife};
         if(savedInstanceState!=null) {
             for (int i = 0; i < 4; i++) {
                 thread(urls[i], date, i);
@@ -566,15 +566,15 @@ public class WeatherFragment extends Fragment {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        Calendar calendar= Calendar.getInstance();
+        /*Calendar calendar= Calendar.getInstance();
         calendar.setTime(date);
         calendar.add(Calendar.HOUR, 3);
-        date = calendar.getTime();
+        date = calendar.getTime();*/
         SimpleDateFormat cdf = new SimpleDateFormat("yyyy.MM.dd("+getDay()+") HH:00", Locale.KOREA);
         return cdf.format(date);
     }
 
-    public String getDateStringToShowDay(String showDate)  {
+   /*public String getDateStringToShowDay(String showDate)  {
         SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHH", Locale.KOREA);
         Date date = null;
         try {
@@ -584,7 +584,7 @@ public class WeatherFragment extends Fragment {
         }
         SimpleDateFormat cdf = new SimpleDateFormat("yyyy.MM.dd("+getDay()+")", Locale.KOREA);
         return cdf.format(date);
-    }
+    }*/
     public String getDay(){
         String day = "";
         Calendar cal = Calendar.getInstance();
@@ -646,10 +646,10 @@ public class WeatherFragment extends Fragment {
 
             if (!str.equals("")) {
                 if (str.equals("자외선지수")&&value[0]!=null) {
-                    new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, getDateStringToShowDay(showDate)).start();
+                    new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, getDateStringToShowTime(showDate)).start();
                 }
                 if (str.equals("불쾌지수")&&value[1]!=null) {
-                    new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, getDateStringToShowDay(showDate)).start();
+                    new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, getDateStringToShowTime(showDate)).start();
                 }
                 if (str.equals("식중독지수")&&value[2]!=null) {
                     new addThread(fsnIndex, "식중독지수", value[2], FSN_DIVIDE_VALUE, R.drawable.fsn, getDateStringToShowTime(showDate)).start();
