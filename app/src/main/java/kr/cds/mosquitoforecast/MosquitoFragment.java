@@ -20,7 +20,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -50,7 +49,7 @@ public class MosquitoFragment extends Fragment{
     int textColor = 0;
     String date;
     String grade;
-    public static Entry entry;
+    public static mosquitoEntry mosquitoEntry;
 
     public void shareKakao()
     {
@@ -123,7 +122,6 @@ public class MosquitoFragment extends Fragment{
                 // TODO Auto-generated method stub
                 if(INTERNET_STATE==true) {
                     value = getXmlData(getDateString()); //모기지수
-                    Log.i("값",value);
                 }
                 //UI Thread(Main Thread)를 제외한 어떤 Thread도 화면을 변경할 수 없기때문에
                 //runOnUiThread()를 이용하여 UI Thread가 TextView 글씨 변경하도록 함
@@ -136,11 +134,11 @@ public class MosquitoFragment extends Fragment{
                         textView3.setText(value);  //TextView에 문자열  value 출력
                         textView4.setText(getGrade(value));
 
-                        entry = MainActivity.dbHelper.fetchEntryByIndex(getGradeDetail(Double.valueOf(value)));
-                        grade=entry.getmGrade();
+                        mosquitoEntry = MainActivity.dbHelper.fetchEntryByIndex(getGradeDetail(Double.valueOf(value)));
+                        grade= mosquitoEntry.getmGrade();
 
-                        textView12.setText(entry.getDefence_activity());
-                        textView13.setText(entry.getAggressive_activity());
+                        textView12.setText(mosquitoEntry.getDefence_activity());
+                        textView13.setText(mosquitoEntry.getAggressive_activity());
 
                         setColor();
                         TranslateAnimation anim = new TranslateAnimation
@@ -205,15 +203,11 @@ public class MosquitoFragment extends Fragment{
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         if (activeNetwork != null) { // connected to the internet
             if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
-
             } else if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE) {
-                //Toast.makeText(getContext(), activeNetwork.getTypeName(), Toast.LENGTH_SHORT).show();
             }
             return true;
         } else {
             return false;
-
-            // not connected to the internet
         }
     }
 
@@ -250,7 +244,6 @@ public class MosquitoFragment extends Fragment{
     }
 
     public String getGrade(String data) {
-        Log.i("Data",data);
         double value = Double.valueOf(data);
         if(value<=250){
             textColor = Color.rgb(255,205,189);

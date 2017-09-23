@@ -1,6 +1,6 @@
 package kr.cds.mosquitoforecast;
 
-public class Entry {
+public class mosquitoEntry {
     private Long id;
     private String mGrade;
     private String defence_activity;

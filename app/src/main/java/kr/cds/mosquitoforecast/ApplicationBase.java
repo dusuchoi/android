@@ -11,8 +11,8 @@ public class ApplicationBase extends Application {      //폰트설정
 
         Typekit.getInstance()
                 .addNormal(Typekit.createFromAsset(this,"SeoulNamsanM.ttf"))
-                .addBold(Typekit.createFromAsset(this,"SeoulNamsanB.ttf"))
-                .addCustom1(Typekit.createFromAsset(this, "SeoulNamsanM.ttf"));
+                .addBold(Typekit.createFromAsset(this,"SeoulNamsanB.ttf"));
+
     }
 
 }

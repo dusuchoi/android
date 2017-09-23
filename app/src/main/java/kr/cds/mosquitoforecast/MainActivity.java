@@ -1,16 +1,20 @@
 package kr.cds.mosquitoforecast;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.tsengvn.typekit.TypekitContextWrapper;
 
-public class MainActivity extends BaseActivity
+
+public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public static DbHelper dbHelper;
@@ -40,7 +44,9 @@ public class MainActivity extends BaseActivity
         getSupportActionBar().setTitle("");
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();   //최초화면
+
         MosquitoFragment mosquitoFragment = new MosquitoFragment();
+
         transaction.replace(R.id.content_frame, mosquitoFragment);
         transaction.commit();
 
@@ -67,7 +73,7 @@ public class MainActivity extends BaseActivity
         DefinitionFragment definitionFragment = new DefinitionFragment();
 
         int id = item.getItemId();
-         if (id == R.id.nav_mosquito) {
+        if (id == R.id.nav_mosquito) {
             transaction.replace(R.id.content_frame, mosquitoFragment);
         }
         else if (id == R.id.nav_weather) {
@@ -76,6 +82,7 @@ public class MainActivity extends BaseActivity
         else if (id == R.id.nav_mosquitoExpression) {
             transaction.replace(R.id.content_frame, definitionFragment);
         }
+
         transaction.commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -83,6 +90,9 @@ public class MainActivity extends BaseActivity
         return true;
     }
 
-
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(TypekitContextWrapper.wrap(newBase));
+    }
 
 }

@@ -10,10 +10,10 @@ import android.util.Log;
 
 public class DbHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "entry.db";
+    private static final String DATABASE_NAME = "mosquitoEntry.db";
     private static DbHelper sInstance;
 
-    public static final String TABLE_NAME_ENTRIES = "entry";
+    public static final String TABLE_NAME_ENTRIES = "mosquitoEntry";
     // Keys for table
     public static final String KEY_ROWID = "_id";
     public static final String KEY_GRADE = "grade";
@@ -69,28 +69,22 @@ public class DbHelper extends SQLiteOpenHelper {
         }
     }
 
-   /* public void removeEntry() {
-        SQLiteDatabase database = getWritableDatabase();
-        database.delete(TABLE_NAME_ENTRIES, null , null);
-    }*/
-
-
-    synchronized Entry fetchEntryByIndex(long rowIndex) {
-        Entry exerciseEntry = new Entry();
+    synchronized mosquitoEntry fetchEntryByIndex(long rowIndex) {
+        mosquitoEntry exerciseMosquitoEntry = new mosquitoEntry();
         Cursor cursor;
         SQLiteDatabase database = getReadableDatabase();
 
         cursor = database.query(TABLE_NAME_ENTRIES, null,
                 KEY_ROWID + " = " + rowIndex, null, null, null, null);
         cursor.moveToFirst();
-        exerciseEntry.setmId(cursor.getLong(0));
-        exerciseEntry.setmGrade(cursor.getString(1));
-        exerciseEntry.setDefence_activity(cursor.getString(2));
-        exerciseEntry.setAggressive_activity(cursor.getString(3));
-        exerciseEntry.setOrganization_activity(cursor.getString(4));
+        exerciseMosquitoEntry.setmId(cursor.getLong(0));
+        exerciseMosquitoEntry.setmGrade(cursor.getString(1));
+        exerciseMosquitoEntry.setDefence_activity(cursor.getString(2));
+        exerciseMosquitoEntry.setAggressive_activity(cursor.getString(3));
+        exerciseMosquitoEntry.setOrganization_activity(cursor.getString(4));
 
         cursor.close();
-        return exerciseEntry;
+        return exerciseMosquitoEntry;
     }
 }
 

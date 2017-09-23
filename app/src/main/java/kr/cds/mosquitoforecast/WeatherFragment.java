@@ -30,6 +30,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.kakao.kakaolink.KakaoLink;
 import com.kakao.kakaolink.KakaoTalkLinkMessageBuilder;
+import com.tsengvn.typekit.TypekitContextWrapper;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.InputStream;
@@ -48,7 +50,7 @@ public class WeatherFragment extends Fragment {
 
     public static final float ULTRA_DIVIDE_VALUE = 0.44f;
     public static final float DSPLS_DIVIDE_VALUE = 8.0f;
-    public static final float FSN_DIVIDE_VALUE = 3.8f;
+    public static final float FSN_DIVIDE_VALUE = 3.5f;
     public static final float HEATLIFE_DIVIDE_VALUE = 9.2f;
     String[]  value;
     private String date;
