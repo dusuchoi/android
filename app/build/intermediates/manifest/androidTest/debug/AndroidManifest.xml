@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kr.cds.mosquitoforecast.test" >
+    package="kr.cds.jisulife.test" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -10,8 +10,8 @@
         android:name="android.support.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for kr.cds.mosquitoforecast"
-        android:targetPackage="kr.cds.mosquitoforecast" />
+        android:label="Tests for kr.cds.jisulife"
+        android:targetPackage="kr.cds.jisulife" />
 
     <application>
         <uses-library android:name="android.test.runner" />

@@ -1,4 +1,4 @@
-#Sat Sep 23 09:34:07 KST 2017
-base.0=C\:\\Users\\dusu\\Desktop\\MosquitoForecast\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1
+#Fri Oct 27 17:42:12 KST 2017
+base.0=C\:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1
 renamed.0=classes.dex
-file.0=C\:\\Users\\dusu\\Desktop\\MosquitoForecast\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1\\classes.dex
+file.0=C\:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1\\classes.dex

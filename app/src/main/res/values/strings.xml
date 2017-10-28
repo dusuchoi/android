@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">생활지수(모기예보)</string>
+    <string name="app_name">생활지수</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -12,6 +12,9 @@
     <string name="_4"><![CDATA[총 4단계로 발령하며, 단계가 높아질수록 모기발생의 우려가 높음 \n *1단계:쾌적단계 < 2단계:관심단계 < 3단계:주의단계 < 4단계:불쾌단계]]></string>
     <string name="appwidget_text">생활지수</string>
     <string name="add_widget">Add widget</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="airQuailityKey">73466451786c7067383672736b5041</string>
 
 
 </resources>

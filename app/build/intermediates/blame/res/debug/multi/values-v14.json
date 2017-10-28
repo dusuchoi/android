@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\dusu\\Desktop\\MosquitoForecast\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "outputFile": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 94
                 },
                 "from": {
-                    "file": "C:\\Users\\dusu\\Desktop\\MosquitoForecast\\app\\src\\main\\res\\values-v14\\dimens.xml",
+                    "file": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\src\\main\\res\\values-v14\\dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
