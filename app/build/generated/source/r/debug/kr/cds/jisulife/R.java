@@ -3584,9 +3584,7 @@ containing a value of this type.
         public static final int weather_actions=0x7f100002;
     }
     public static final class mipmap {
-        public static final int ic_launcher=0x7f030000;
-        public static final int ic_launcher_2=0x7f030001;
-        public static final int ic_launcher_round=0x7f030002;
+        public static final int ic_launcher_2=0x7f030000;
     }
     public static final class string {
         public static final int _2=0x7f080023;

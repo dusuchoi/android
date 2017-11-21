@@ -1186,9 +1186,7 @@ int layout title_divider 0x7f040050
 int menu activity_main_drawer 0x7f100000
 int menu mosquito_actions 0x7f100001
 int menu weather_actions 0x7f100002
-int mipmap ic_launcher 0x7f030000
-int mipmap ic_launcher_2 0x7f030001
-int mipmap ic_launcher_round 0x7f030002
+int mipmap ic_launcher_2 0x7f030000
 int string _2 0x7f080023
 int string _4 0x7f080024
 int string abc_action_bar_home_description 0x7f080000

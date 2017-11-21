@@ -1,7 +1,0 @@
-#Sat Oct 28 15:09:53 KST 2017
-base.0=C\:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ab976727f8be5b29eba5128ed8bd53e62f9e2626
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_fc79aea6b20aafa63e46456de4acb08c6438a5e5\\classes.dex
-base.1=C\:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_fc79aea6b20aafa63e46456de4acb08c6438a5e5
-file.0=C\:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ab976727f8be5b29eba5128ed8bd53e62f9e2626\\classes.dex

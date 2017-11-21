@@ -50,7 +50,7 @@ public class WeatherFragment extends Fragment {
 
     public static final float ULTRA_DIVIDE_VALUE = 0.44f;
     public static final float DSPLS_DIVIDE_VALUE = 8.0f;
-    public static final float FSN_DIVIDE_VALUE = 3.5f;
+    public static final float FSN_DIVIDE_VALUE = 6.0f;
     public static final float HEATLIFE_DIVIDE_VALUE = 9.2f;
     private static final float WINTERLIFE_DIVIDE_VALUE = 0.09f;
     private static final float SENSORYTEM_DIVIDE_VALUE = -1.25f;
@@ -111,7 +111,6 @@ public class WeatherFragment extends Fragment {
                     shareKakao(ultraIndex, "자외선지수", value[0]);
                 } else if (pos == 1 && !value[1].equals("")) {
                     shareKakao(dsplsIndex, "불쾌지수", value[1]);
-                    Toast.makeText(getActivity(), value[1], Toast.LENGTH_SHORT).show();
                 } else if (pos == 2 && !value[2].equals("")) {
                     shareKakao(fsnIndex, "식중독지수", value[2]);
                 } else if (pos == 3 && !value[3].equals("")) {
@@ -376,15 +375,10 @@ public class WeatherFragment extends Fragment {
 
             holder.dateView.setText(mData.getDate());     //날짜
 
-            float scale = ((float)getScreenWidth()/1080);
-            if(scale!=1)
-                scale*=1.5;
-            //Toast.makeText(getActivity(), String.valueOf(getScreenWidth()+","+scale),Toast.LENGTH_SHORT).show();
-            //holder.indicator.getLayoutParams().width*=scale;
-            //holder.indicator.getLayoutParams().height*=(scale*2);
+            //float scale = ((float)getScreenWidth()/1080);
             TranslateAnimation anim = new TranslateAnimation
                     (Animation.RELATIVE_TO_SELF, 0,   // fromXDelta
-                            Animation.RELATIVE_TO_SELF, Float.valueOf(mData.getValue()) / mData.divideValue * scale,  // toXDelta
+                            Animation.RELATIVE_TO_SELF, Float.valueOf(mData.getValue()) / mData.divideValue,  // toXDelta
                             Animation.RELATIVE_TO_SELF, 0,    //fromYDelta
                             Animation.RELATIVE_TO_SELF, 0); //toYDelta
 
@@ -400,8 +394,7 @@ public class WeatherFragment extends Fragment {
                     new removeThread(position).start();
                 }
             });
-            //holder.indicator.getLayoutParams().width/=scale;
-           // holder.indicator.getLayoutParams().height/=(scale*2);
+
             convertView.setTag(holder);
             return convertView;
         }

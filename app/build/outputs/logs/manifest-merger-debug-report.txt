@@ -15,7 +15,7 @@ ADDED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-5
 		INJECTED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:11:5-67
+MERGED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -24,7 +24,7 @@ ADDED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml:6:5-7
 		ADDED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml:6:22-76
 application
 ADDED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml:8:5-51:19
-MERGED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:13:5-29:19
+MERGED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:13:5-29:19
 MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\dusu\.android\build-cache\203faf7cd1f7e524ca0bcd09bf9cfe1bcf6a22e8\output\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dusu\.android\build-cache\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\output\AndroidManifest.xml:29:5-20
@@ -116,7 +116,7 @@ uses-sdk
 INJECTED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\dusu\.android\build-cache\25199f03e1f78b94380a8237970718846de9bb52\output\AndroidManifest.xml:11:5-13:41
 MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\dusu\.android\build-cache\5de820354788041deecd45c96a5f8e77e2f52ea5\output\AndroidManifest.xml:11:5-13:41
-MERGED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:7:5-9:41
+MERGED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\dusu\.android\build-cache\203faf7cd1f7e524ca0bcd09bf9cfe1bcf6a22e8\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dusu\.android\build-cache\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\output\AndroidManifest.xml:21:5-23:78
@@ -140,29 +140,29 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dusu\.android\b
 		INJECTED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\dusu\Desktop\JisuLife\app\src\main\AndroidManifest.xml
 activity#kr.go.seoul.airquality.AirQualityDetailTypeA
-ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:17:9-19:52
+ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:17:9-19:52
 	android:screenOrientation
-		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:19:13-49
+		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:19:13-49
 	android:name
-		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:18:13-72
+		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:18:13-72
 activity#kr.go.seoul.airquality.AirQualityDetailTypeB
-ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:20:9-22:52
+ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:20:9-22:52
 	android:screenOrientation
-		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:22:13-49
+		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:22:13-49
 	android:name
-		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:21:13-72
+		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:21:13-72
 activity#kr.go.seoul.airquality.AirQualityMapTypeA
-ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:23:9-25:52
+ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:23:9-25:52
 	android:screenOrientation
-		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:25:13-49
+		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:25:13-49
 	android:name
-		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:24:13-69
+		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:24:13-69
 activity#kr.go.seoul.airquality.AirQualityMapTypeB
-ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:26:9-28:52
+ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:26:9-28:52
 	android:screenOrientation
-		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:28:13-49
+		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:28:13-49
 	android:name
-		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\8dcb3ec36c2f76a9f12ceb0eb4975d58b5a3406a\output\AndroidManifest.xml:27:13-69
+		ADDED from [JisuLife:airquality-release:unspecified] C:\Users\dusu\.android\build-cache\bdc6223abe58b73fbc170f3dcb062fc3ec89f594\output\AndroidManifest.xml:27:13-69
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] C:\Users\dusu\.android\build-cache\06f8793f7ae49360c1dd578b93578e1a18a6c3b0\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dusu\.android\build-cache\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\output\AndroidManifest.xml:25:5-27:34
