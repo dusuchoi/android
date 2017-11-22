@@ -22,6 +22,8 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.kakao.kakaolink.KakaoLink;
 import com.kakao.kakaolink.KakaoTalkLinkMessageBuilder;
 import org.xmlpull.v1.XmlPullParser;
@@ -71,6 +73,7 @@ public class MosquitoFragment extends Fragment{
     }
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.refresh) {
+            INTERNET_STATE=checkInternet();
             thread();
             return (true);
         }
@@ -108,7 +111,9 @@ public class MosquitoFragment extends Fragment{
 
         if(checkInternet()==false){
             INTERNET_STATE=false;
-            getPreferences();
+            if(getPreferences()==false)
+                Toast.makeText(getActivity(),"네트워크가 연결되지 않았습니다.", Toast.LENGTH_SHORT).show();
+
         }
 
         thread();
@@ -122,6 +127,8 @@ public class MosquitoFragment extends Fragment{
                 if(INTERNET_STATE==true) {
                     value = getXmlData(getDateString()); //모기지수
                 }
+                else
+                    return;
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -200,7 +207,8 @@ public class MosquitoFragment extends Fragment{
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         if (activeNetwork != null) { // connected to the internet
             if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
-            } else if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE) {
+            }
+            else if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE) {
             }
             return true;
         } else {
@@ -209,14 +217,17 @@ public class MosquitoFragment extends Fragment{
     }
 
 
-     //값 불러오기
-     private void getPreferences(){
+    //값 불러오기
+     private boolean getPreferences(){
          SharedPreferences pref = getContext().getSharedPreferences("pref", Context.MODE_PRIVATE);
          value=pref.getString("value", "");
+         if(value == "")
+             return false;
          date=pref.getString("dateView", "");
          textView2.setText(date);
          textView3.setText(value);
          textView4.setText(getGrade(value));
+         return true;
      }
 
      // 값 저장하기
