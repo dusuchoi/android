@@ -165,7 +165,9 @@ public class WeatherFragment extends Fragment {
             thread(urls[7], date, 7);
             thread(urls[8], date, 8);
             thread(urls[9], date, 9);
+            new refreshThread().start();
             mAdapter.notifyDataSetChanged();
+
             return (true);
         }
         if (item.getItemId() == R.id.add) {
@@ -284,6 +286,67 @@ public class WeatherFragment extends Fragment {
                 @Override
                 public void run() {
                     mAdapter.remove(position);
+                    mAdapter.notifyDataSetChanged();
+                }
+            });
+        }
+    }
+
+    private class refreshThread extends Thread {
+        String name;
+
+        private refreshThread(){
+        }
+
+        public void run() {
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    for(int i = 0; i < mAdapter.getCount();i++) {
+                        name = mAdapter.getItem(i).name;
+                        if(name.equals("자외선지수")) {
+                            mAdapter.remove(i);
+                            new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("불쾌지수")) {
+                            mAdapter.remove(i);
+                            new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("식중독지수")) {
+                            mAdapter.remove(i);
+                            new addThread(fsnIndex, "식중독지수", value[2], FSN_DIVIDE_VALUE, R.drawable.fsn, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("열지수")) {
+                            mAdapter.remove(i);
+                            new addThread(heatLifeIndex, "열지수", value[3], HEATLIFE_DIVIDE_VALUE, R.drawable.heatlife, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("감기가능지수")) {
+                            mAdapter.remove(i);
+                            new addThread(inflWhoIndex, "감기가능지수", value[4], INFLWHOLIST_DIVIDE_VALUE, R.drawable.inflwholist, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("체감온도")) {
+                            mAdapter.remove(i);
+                            new addThread(sensorytemLifeIndex, "체감온도", value[5], SENSORYTEM_DIVIDE_VALUE, R.drawable.seonsorytem, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("동파가능지수")) {
+                            mAdapter.remove(i);
+                            new addThread(winterLifeIndex, "동파가능지수", value[6], WINTERLIFE_DIVIDE_VALUE, R.drawable.winterlife, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("천식폐질환가능지수")) {
+                            mAdapter.remove(i);
+                            new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], WINTERLIFE_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("뇌졸중가능지수")) {
+                            mAdapter.remove(i);
+                            new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], WINTERLIFE_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate)).start();
+                        }
+                        else if(name.equals("피부질환가능지수")) {
+                            mAdapter.remove(i);
+                            new addThread(skinWhoIndex, "피부질환가능지수", value[9], WINTERLIFE_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate)).start();
+                        }
+                        else
+                        Toast.makeText(getActivity(),"제공기간이 아닙니다.", Toast.LENGTH_SHORT).show();
+                    }
                     mAdapter.notifyDataSetChanged();
                 }
             });
@@ -429,6 +492,15 @@ public class WeatherFragment extends Fragment {
             mListData.remove(position);
             mAdapter.notifyDataSetChanged();
         }
+
+//        public void refresh(int count) {
+//            LifeIndex addInfo = new LifeIndex();
+//            for (int i = 0; i < count; i++) {
+//                addInfo =  mListData.get(i);
+//                mListData.remove(i);
+//                mListData.add(0, addInfo);
+//            }
+//       }
     }
 
 
