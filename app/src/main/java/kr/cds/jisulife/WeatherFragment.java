@@ -52,7 +52,7 @@ public class WeatherFragment extends Fragment {
     public static final float DSPLS_DIVIDE_VALUE = 8.0f;
     public static final float FSN_DIVIDE_VALUE = 6.0f;
     public static final float HEATLIFE_DIVIDE_VALUE = 9.2f;
-    private static final float WINTERLIFE_DIVIDE_VALUE = 0.09f;
+    private static final float WINTERLIFE_DIVIDE_VALUE = 9.0f;
     private static final float SENSORYTEM_DIVIDE_VALUE = -1.25f;
     private static final float INFLWHOLIST_DIVIDE_VALUE = 0.09f;
     private String[]  value;
@@ -220,15 +220,15 @@ public class WeatherFragment extends Fragment {
                     }
                     else if (pos == 7) {
                         thread(urls[pos], date, pos);
-                        new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], WINTERLIFE_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate)).start();
+                        new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], INFLWHOLIST_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate)).start();
                     }
                     else if (pos == 8) {
                         thread(urls[pos], date, pos);
-                        new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], WINTERLIFE_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate)).start();
+                        new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], INFLWHOLIST_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate)).start();
                     }
                     else if (pos == 9) {
                         thread(urls[pos], date, pos);
-                        new addThread(skinWhoIndex, "피부질환가능지수", value[9], WINTERLIFE_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate)).start();
+                        new addThread(skinWhoIndex, "피부질환가능지수", value[9], INFLWHOLIST_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate)).start();
                     }
                     else
                         Toast.makeText(getActivity(),"제공기간이 아닙니다.", Toast.LENGTH_SHORT).show();
@@ -334,18 +334,23 @@ public class WeatherFragment extends Fragment {
                         }
                         else if(name.equals("천식폐질환가능지수")) {
                             mAdapter.remove(i);
-                            new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], WINTERLIFE_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate)).start();
+                            new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], INFLWHOLIST_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate)).start();
                         }
                         else if(name.equals("뇌졸중가능지수")) {
                             mAdapter.remove(i);
-                            new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], WINTERLIFE_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate)).start();
+                            new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], INFLWHOLIST_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate)).start();
                         }
                         else if(name.equals("피부질환가능지수")) {
                             mAdapter.remove(i);
-                            new addThread(skinWhoIndex, "피부질환가능지수", value[9], WINTERLIFE_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate)).start();
+                            new addThread(skinWhoIndex, "피부질환가능지수", value[9], INFLWHOLIST_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate)).start();
                         }
                         else
                         Toast.makeText(getActivity(),"제공기간이 아닙니다.", Toast.LENGTH_SHORT).show();
+                    }
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
                     mAdapter.notifyDataSetChanged();
                 }
@@ -493,14 +498,6 @@ public class WeatherFragment extends Fragment {
             mAdapter.notifyDataSetChanged();
         }
 
-//        public void refresh(int count) {
-//            LifeIndex addInfo = new LifeIndex();
-//            for (int i = 0; i < count; i++) {
-//                addInfo =  mListData.get(i);
-//                mListData.remove(i);
-//                mListData.add(0, addInfo);
-//            }
-//       }
     }
 
 
@@ -824,13 +821,13 @@ public class WeatherFragment extends Fragment {
                     new addThread(winterLifeIndex, "동파가능지수", value[6], WINTERLIFE_DIVIDE_VALUE, R.drawable.winterlife, showDateTime(showDate)).start();
                 }
                 if (str.equals("천식폐질환가능지수") && value[7] != null) {
-                    new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], WINTERLIFE_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate)).start();
+                    new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], INFLWHOLIST_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate)).start();
                 }
                 if (str.equals("뇌졸중가능지수") && value[8] != null) {
-                    new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], WINTERLIFE_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate)).start();
+                    new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], INFLWHOLIST_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate)).start();
                 }
                 if (str.equals("피부질환가능지수") && value[9] != null) {
-                    new addThread(skinWhoIndex, "피부질환가능지수", value[9], WINTERLIFE_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate)).start();
+                    new addThread(skinWhoIndex, "피부질환가능지수", value[9], INFLWHOLIST_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate)).start();
                 }
             }
             else
