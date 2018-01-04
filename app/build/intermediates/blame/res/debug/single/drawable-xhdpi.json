@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_search_black_24dp.png",
+        "source": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_search_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\kakaotalk_icon.png",
         "source": "C:\\Users\\dusu\\.android\\build-cache\\5de820354788041deecd45c96a5f8e77e2f52ea5\\output\\res\\drawable-xhdpi\\kakaotalk_icon.png"
     },
