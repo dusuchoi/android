@@ -10,8 +10,6 @@ import android.graphics.drawable.GradientDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.annotation.IntegerRes;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -49,10 +47,10 @@ import java.util.Locale;
 
 public class WeatherFragment extends Fragment {
 
-    public static final float ULTRA_DIVIDE_VALUE = 0.44f;
-    public static final float DSPLS_DIVIDE_VALUE = 8.0f;
-    public static final float FSN_DIVIDE_VALUE = 4.0f;
-    public static final float HEATLIFE_DIVIDE_VALUE = 9.2f;
+    private static final float ULTRA_DIVIDE_VALUE = 0.44f;
+    private static final float DSPLS_DIVIDE_VALUE = 8.0f;
+    private static final float FSN_DIVIDE_VALUE = 4.5f;
+    private static final float HEATLIFE_DIVIDE_VALUE = 9.9f;
     private static final float WINTERLIFE_DIVIDE_VALUE = 9.0f;
     private static float SENSORYTEM_DIVIDE_VALUE = -1.25f;
     private static final float INFLWHOLIST_DIVIDE_VALUE = 0.09f;
@@ -147,10 +145,9 @@ public class WeatherFragment extends Fragment {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.refresh) {
-
+            date = getDateString();
             refreshThread refreshThread = new refreshThread();
             refreshThread.run();
-
             try {
                 refreshThread.join();
             } catch (InterruptedException e) {
@@ -161,6 +158,7 @@ public class WeatherFragment extends Fragment {
             return (true);
         }
         if (item.getItemId() == R.id.add) {
+            date = getDateString();
             setAddDialog();
             return (true);
         }
@@ -559,7 +557,6 @@ public class WeatherFragment extends Fragment {
         mAdapter = new ListViewAdapter(getContext());
         mListView.setAdapter(mAdapter);
 
-        date = getDateString();
         loadPreferences();
 
 
@@ -567,6 +564,7 @@ public class WeatherFragment extends Fragment {
     public static int getScreenWidth() {
         return Resources.getSystem().getDisplayMetrics().widthPixels;
     }
+
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -689,8 +687,7 @@ public class WeatherFragment extends Fragment {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd("+getDay()+") HH:00", Locale.KOREA);
-        Log.i("date",showDate);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd("+ getDayOfWeek(showDate,"yyyyMMddHH")+") HH:00", Locale.KOREA);
         return sdf.format(date);
     }
 
@@ -712,10 +709,19 @@ public class WeatherFragment extends Fragment {
        }
 
    }
-    public String getDay(){
+    public String getDayOfWeek(String showDate, String dateType){
         String day = "";
+        SimpleDateFormat dateFormat = new SimpleDateFormat(dateType);
+        Date nDate = null;
+        try {
+            nDate = dateFormat.parse(showDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
         Calendar cal = Calendar.getInstance();
-        cal.setTime(new Date());
+        cal.setTime(nDate);
+
         int dayNum = cal.get(Calendar.DAY_OF_WEEK);
         switch (dayNum) {
             case 1:
@@ -740,6 +746,7 @@ public class WeatherFragment extends Fragment {
                 day = "토";
                 break;
         }
+        Log.i("day",day+"");
         return day;
     }
 

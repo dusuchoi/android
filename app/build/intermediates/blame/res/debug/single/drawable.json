@@ -196,12 +196,12 @@
         "source": "C:\\Users\\dusu\\.android\\build-cache\\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\dusu\\.android\\build-cache\\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\\output\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
         "merged": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ultra.png",
         "source": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\src\\main\\res\\drawable\\ultra.png"
+    },
+    {
+        "merged": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\dusu\\.android\\build-cache\\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kakao_default_profile_image.png",
