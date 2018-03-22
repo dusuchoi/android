@@ -284,6 +284,10 @@
         "source": "C:\\Users\\dusu\\.android\\build-cache\\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_location.xml",
+        "source": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\src\\main\\res\\layout\\fragment_location.xml"
+    },
+    {
         "merged": "C:\\Users\\dusu\\Desktop\\JisuLife\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "C:\\Users\\dusu\\.android\\build-cache\\28aec1109bf7c1e16f52583ae6e287fbf00cf8b6\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },

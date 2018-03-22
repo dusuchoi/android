@@ -11,15 +11,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import com.tsengvn.typekit.TypekitContextWrapper;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, CommunicationListener{
 
     public static DbHelper dbHelper;
-
-
+    public String location = "1100000000";
+    WeatherFragment weatherFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,8 +49,8 @@ public class MainActivity extends AppCompatActivity
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();   //최초화면
 
-        WeatherFragment weatherFragment = new WeatherFragment();
-
+        weatherFragment = new WeatherFragment();
+        weatherFragment.setLocation(location);
         transaction.replace(R.id.content_frame, weatherFragment);
         transaction.commit();
 
@@ -72,9 +73,11 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         MosquitoFragment mosquitoFragment = new MosquitoFragment();
-        WeatherFragment weatherFragment = new WeatherFragment();
+        weatherFragment = new WeatherFragment();
         ExpressionFragment expressionFragment = new ExpressionFragment();
         AirFragment airFragment = new AirFragment();
+        LocationFragment locationFragment = new LocationFragment();
+
         int id = item.getItemId();
         if (id == R.id.nav_weather) {
             transaction.replace(R.id.content_frame, weatherFragment);
@@ -82,12 +85,14 @@ public class MainActivity extends AppCompatActivity
         else if (id == R.id.nav_mosquito) {
             transaction.replace(R.id.content_frame, mosquitoFragment);
         }
-
         else if (id == R.id.nav_expression) {
             transaction.replace(R.id.content_frame, expressionFragment);
         }
         else if (id == R.id.nav_air) {
             transaction.replace(R.id.content_frame, airFragment);
+        }
+        else if (id == R.id.nav_location) {
+            transaction.replace(R.id.content_frame, locationFragment);
         }
         transaction.commit();
 
@@ -101,4 +106,9 @@ public class MainActivity extends AppCompatActivity
         super.attachBaseContext(TypekitContextWrapper.wrap(newBase));
     }
 
+    @Override
+    public void sendData(String location) {
+        this.location = location;
+        weatherFragment.setLocation(location);
+    }
 }

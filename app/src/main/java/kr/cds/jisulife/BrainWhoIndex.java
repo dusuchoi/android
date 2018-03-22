@@ -51,10 +51,12 @@ class BrainWhoIndex extends LifeIndex {
         grade=3;
         return "매우높음";
     }
+    @Override
     public int getColor(){
         return color;
     }
 
+    @Override
     public String getData(){
         switch (grade){
             case 0:

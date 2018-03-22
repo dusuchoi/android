@@ -10,6 +10,8 @@ import android.graphics.drawable.GradientDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Looper;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -26,13 +28,16 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.kakao.kakaolink.KakaoLink;
 import com.kakao.kakaolink.KakaoTalkLinkMessageBuilder;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
+
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -49,18 +54,18 @@ public class WeatherFragment extends Fragment {
 
     private static final float ULTRA_DIVIDE_VALUE = 0.44f;
     private static final float DSPLS_DIVIDE_VALUE = 8.0f;
-    private static final float FSN_DIVIDE_VALUE = 4.5f;
+    private static final float FSN_DIVIDE_VALUE = 6.0f;
     private static final float HEATLIFE_DIVIDE_VALUE = 9.9f;
-    private static final float WINTERLIFE_DIVIDE_VALUE = 9.0f;
+    private static final float WINTERLIFE_DIVIDE_VALUE = 8.7f;
     private static float SENSORYTEM_DIVIDE_VALUE = -1.25f;
     private static final float INFLWHOLIST_DIVIDE_VALUE = 0.09f;
-    private String[]  value;
+    private String[] value;
     private String[] showDate;
     private String date;
     private boolean INTERNET_STATE = false;
-    private UltraIndex  ultraIndex;
+    private UltraIndex ultraIndex;
     private DsplsIndex dsplsIndex;
-    private FsnIndex  fsnIndex;
+    private FsnIndex fsnIndex;
     private HeatLifeIndex heatLifeIndex;
     private InflWhoListIndex inflWhoIndex;
     private SensorytmeLifeIndex sensorytemLifeIndex;
@@ -82,23 +87,25 @@ public class WeatherFragment extends Fragment {
     private String queryasthmaWho;
     private String querybrainWho;
     private String queryskinWho;
+    private ProgressBar progressBar;
+    private boolean timeout = true;
+    private static String location;
 
     // 공유(share)
     //////////////////////////////////////////////////////////////////////////
-    public void shareKakao(LifeIndex lifeIndex, String name, String value)
-    {
-        try{
+    public void shareKakao(LifeIndex lifeIndex, String name, String value) {
+        try {
             final KakaoLink kakaoLink = KakaoLink.getKakaoLink(getActivity());
             final KakaoTalkLinkMessageBuilder kakaoBuilder = kakaoLink.createKakaoTalkLinkMessageBuilder();
-            kakaoBuilder.addText("오늘의 "+name+"는 "+lifeIndex.getGradeToString(value)+"("+value+") 입니다.");
+            kakaoBuilder.addText("오늘의 " + name + "는 " + lifeIndex.getGradeToString(value) + "(" + value + ") 입니다.");
             kakaoBuilder.addAppButton("앱 실행 혹은 다운로드");
             kakaoLink.sendMessage(kakaoBuilder, getContext());
 
-        }catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     void setShareDialog() {
         String[] array = {"자외선지수", "불쾌지수", "식중독지수", "열지수",
                 "감기가능지수", "체감온도", "동파가능지수", "천식폐질환가능지수", "뇌졸증가능지수", "피부질환가능지수"};
@@ -119,11 +126,11 @@ public class WeatherFragment extends Fragment {
                     shareKakao(sensorytemLifeIndex, "체감온도", value[5]);
                 } else if (pos == 6 && !value[6].equals("")) {
                     shareKakao(winterLifeIndex, "동파가능지수", value[6]);
-                }else if (pos == 7 && !value[7].equals("")) {
+                } else if (pos == 7 && !value[7].equals("")) {
                     shareKakao(asthmaWhoIndex, "천식폐질환가능지수", value[7]);
-                }else if (pos == 8 && !value[8].equals("")) {
+                } else if (pos == 8 && !value[8].equals("")) {
                     shareKakao(brainWhoIndex, "뇌졸증가능지수", value[8]);
-                }else if (pos == 9 && !value[9].equals("")) {
+                } else if (pos == 9 && !value[9].equals("")) {
                     shareKakao(skinWhoIndex, "피부질환가능지수", value[9]);
                 } else
                     Toast.makeText(getActivity(), "데이터가 없습니다.", Toast.LENGTH_SHORT).show();
@@ -145,6 +152,7 @@ public class WeatherFragment extends Fragment {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.refresh) {
+
             date = getDateString();
             refreshThread refreshThread = new refreshThread();
             refreshThread.run();
@@ -154,7 +162,7 @@ public class WeatherFragment extends Fragment {
                 e.printStackTrace();
             }
             mAdapter.notifyDataSetChanged();
-
+            progressBar.setVisibility(View.GONE);
             return (true);
         }
         if (item.getItemId() == R.id.add) {
@@ -171,65 +179,125 @@ public class WeatherFragment extends Fragment {
 
     public void setAddDialog() {
         String[] array = {"자외선지수 (3월~11월)", "불쾌지수 (6월~9월)", "식중독지수 (연중)", "열지수 (6월~9월)"
-                ,"감기가능지수 (9월~익년4월)","체감온도 (11월~익년3월)","동파가능지수 (12월~익년2월)", "천식페질환가능지수(연중)", "뇌졸중가능지수(연중)", "피부질환가능지수(연중)"};
+                , "감기가능지수 (9월~익년4월)", "체감온도 (11월~익년3월)", "동파가능지수 (12월~익년2월)", "천식페질환가능지수(연중)", "뇌졸중가능지수(연중)", "피부질환가능지수(연중)"};
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setItems(array, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int pos) {
+                progressBar.setVisibility(View.VISIBLE);
                 String[] urls = {queryUrlUltra, queryUrlDspls, queryUrlFsn, queryUrlHeatLife, queryInflWhoList, querySeonsorytemLife, queryWinterLife, queryasthmaWho, querybrainWho, queryskinWho};
                 if (checkInternet() == true) {
                     INTERNET_STATE = true;
-                    if (pos == 0 &&checkMonth(3,11)) {
-                            thread(urls[pos], date, pos);
-                            new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, showDateTime(showDate[0])).start();
-                    }
-                    else if (pos == 1 && checkMonth(6,9)) {
-                            thread(urls[pos], date, pos);
-                            new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, showDateTime(showDate[1])).start();
-                    }
-                    else if (pos == 2) {
-                            thread(urls[pos], date, pos);
-                            new addThread(fsnIndex, "식중독지수", value[2], FSN_DIVIDE_VALUE, R.drawable.fsn, showDateTime(showDate[2])).start();
-                    }
-                    else if (pos == 3 && checkMonth(6,9)) {
-                            thread(urls[pos], date, pos);
-                            new addThread(heatLifeIndex, "열지수", value[3], HEATLIFE_DIVIDE_VALUE, R.drawable.heatlife, showDateTime(showDate[3])).start();
-                    }
-                    else if (pos == 4 && checkMonth(9,4)) {
+                    if (pos == 0 && checkMonth(3, 11)) {
+                        thread(urls[pos], date, pos);
+                        new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, showDateTime(showDate[0])).start();
+                    } else if (pos == 1 && checkMonth(6, 9)) {
+                        thread(urls[pos], date, pos);
+                        new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, showDateTime(showDate[1])).start();
+                    } else if (pos == 2) {
+                        thread(urls[pos], date, pos);
+                        new addThread(fsnIndex, "식중독지수", value[2], FSN_DIVIDE_VALUE, R.drawable.fsn, showDateTime(showDate[2])).start();
+                    } else if (pos == 3 && checkMonth(6, 9)) {
+                        thread(urls[pos], date, pos);
+                        new addThread(heatLifeIndex, "열지수", value[3], HEATLIFE_DIVIDE_VALUE, R.drawable.heatlife, showDateTime(showDate[3])).start();
+                    } else if (pos == 4 && checkMonth(9, 4)) {
                         thread(urls[pos], date, pos);
                         new addThread(inflWhoIndex, "감기가능지수", value[4], INFLWHOLIST_DIVIDE_VALUE, R.drawable.inflwholist, showDateTime(showDate[4])).start();
-                    }
-                    else if (pos == 5 && checkMonth(11,3)) {
+                    } else if (pos == 5 && checkMonth(11, 3)) {
                         thread(urls[pos], date, pos);
-                        if(Integer.parseInt(value[5])>0)
-                            SENSORYTEM_DIVIDE_VALUE = 0.0f;
+                        if (Integer.parseInt(value[5]) > 0)
+                            SENSORYTEM_DIVIDE_VALUE = 100.0f;
                         new addThread(sensorytemLifeIndex, "체감온도", value[5], SENSORYTEM_DIVIDE_VALUE, R.drawable.seonsorytem, showDateTime(showDate[5])).start();
-                    }
-                    else if (pos == 6 && checkMonth(12,2)) {
+                    } else if (pos == 6 && checkMonth(12, 2)) {
                         thread(urls[pos], date, pos);
                         new addThread(winterLifeIndex, "동파가능지수", value[6], WINTERLIFE_DIVIDE_VALUE, R.drawable.winterlife, showDateTime(showDate[6])).start();
-                    }
-                    else if (pos == 7) {
+                    } else if (pos == 7) {
                         thread(urls[pos], date, pos);
                         new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], INFLWHOLIST_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate[7])).start();
-                    }
-                    else if (pos == 8) {
+                    } else if (pos == 8) {
                         thread(urls[pos], date, pos);
                         new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], INFLWHOLIST_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate[8])).start();
-                    }
-                    else if (pos == 9) {
+                    } else if (pos == 9) {
                         thread(urls[pos], date, pos);
                         new addThread(skinWhoIndex, "피부질환가능지수", value[9], INFLWHOLIST_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate[9])).start();
-                    }
-                    else
-                        Toast.makeText(getActivity(),"제공기간이 아닙니다.", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(getActivity(),"네트워크가 연결되지 않았습니다.", Toast.LENGTH_SHORT).show();
+                    } else
+                        Toast.makeText(getActivity(), "제공기간이 아닙니다.", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getActivity(), "네트워크가 연결되지 않았습니다.", Toast.LENGTH_SHORT).show();
                 }
+                progressBar.setVisibility(View.GONE);
             }
         });
+
         builder.show();
     }
 
+    private class refreshThread extends Thread {
+        String name;
+        String[] urls = {queryUrlUltra, queryUrlDspls, queryUrlFsn, queryUrlHeatLife, queryInflWhoList,
+                querySeonsorytemLife, queryWinterLife, queryasthmaWho, querybrainWho, queryskinWho};
+
+        private refreshThread() {
+        }
+
+        public void run() {
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    progressBar.setVisibility(View.VISIBLE);
+                    while (mAdapter.getCount() > 0) {
+                        if (checkInternet() == true) {
+                            INTERNET_STATE = true;
+                            name = mAdapter.getItem(0).name;
+                            if (name.equals("자외선지수") && checkMonth(3, 11)) {
+                                thread(urls[0], date, 0);
+                                mAdapter.remove(0);
+                                new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, showDateTime(showDate[0])).start();
+                            } else if (name.equals("불쾌지수") && checkMonth(6, 9)) {
+                                thread(urls[1], date, 1);
+                                mAdapter.remove(0);
+                                new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, showDateTime(showDate[1])).start();
+                            } else if (name.equals("식중독지수")) {
+                                thread(urls[2], date, 2);
+                                mAdapter.remove(0);
+                                new addThread(fsnIndex, "식중독지수", value[2], FSN_DIVIDE_VALUE, R.drawable.fsn, showDateTime(showDate[2])).start();
+                            } else if (name.equals("열지수") && checkMonth(6, 9)) {
+                                thread(urls[3], date, 3);
+                                mAdapter.remove(0);
+                                new addThread(heatLifeIndex, "열지수", value[3], HEATLIFE_DIVIDE_VALUE, R.drawable.heatlife, showDateTime(showDate[3])).start();
+                            } else if (name.equals("감기가능지수") && checkMonth(9, 4)) {
+                                thread(urls[4], date, 4);
+                                mAdapter.remove(0);
+                                new addThread(inflWhoIndex, "감기가능지수", value[4], INFLWHOLIST_DIVIDE_VALUE, R.drawable.inflwholist, showDateTime(showDate[4])).start();
+                            } else if (name.equals("체감온도") && checkMonth(11, 3)) {
+                                thread(urls[5], date, 5);
+                                mAdapter.remove(0);
+                                new addThread(sensorytemLifeIndex, "체감온도", value[5], SENSORYTEM_DIVIDE_VALUE, R.drawable.seonsorytem, showDateTime(showDate[5])).start();
+                            } else if (name.equals("동파가능지수") && checkMonth(12, 2)) {
+                                thread(urls[6], date, 6);
+                                mAdapter.remove(0);
+                                new addThread(winterLifeIndex, "동파가능지수", value[6], WINTERLIFE_DIVIDE_VALUE, R.drawable.winterlife, showDateTime(showDate[6])).start();
+                            } else if (name.equals("천식폐질환가능지수")) {
+                                thread(urls[7], date, 7);
+                                mAdapter.remove(0);
+                                new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], INFLWHOLIST_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate[7])).start();
+                            } else if (name.equals("뇌졸중가능지수")) {
+                                thread(urls[8], date, 8);
+                                mAdapter.remove(0);
+                                new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], INFLWHOLIST_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate[8])).start();
+                            } else if (name.equals("피부질환가능지수")) {
+                                thread(urls[9], date, 9);
+                                mAdapter.remove(0);
+                                new addThread(skinWhoIndex, "피부질환가능지수", value[9], INFLWHOLIST_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate[9])).start();
+                            } else
+                                Toast.makeText(getActivity(), "제공기간이 아닙니다.", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(getActivity(), "네트워크가 연결되지 않았습니다.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+            });
+        }
+    }
 
     public class addThread extends Thread {
         private LifeIndex lifeIndex;
@@ -280,71 +348,11 @@ public class WeatherFragment extends Fragment {
         }
     }
 
-    private class refreshThread extends Thread {
-        String name;
-        String[] urls = {queryUrlUltra, queryUrlDspls, queryUrlFsn, queryUrlHeatLife, queryInflWhoList,
-                querySeonsorytemLife, queryWinterLife, queryasthmaWho, querybrainWho, queryskinWho };
-        private refreshThread(){
-        }
-
-        public void run() {
-            getActivity().runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    while(mAdapter.getCount()>0){
-                        name = mAdapter.getItem(0).name;
-                        if (name.equals("자외선지수") && checkMonth(3, 11)) {
-                            thread(urls[0], date, 0);
-                            mAdapter.remove(0);
-                            new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, showDateTime(showDate[0])).start();
-                        } else if (name.equals("불쾌지수") && checkMonth(6, 9)) {
-                            thread(urls[1], date, 1);
-                            mAdapter.remove(0);
-                            new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, showDateTime(showDate[1])).start();
-                        } else if (name.equals("식중독지수")) {
-                            thread(urls[2], date, 2);
-                            mAdapter.remove(0);
-                            new addThread(fsnIndex, "식중독지수", value[2], FSN_DIVIDE_VALUE, R.drawable.fsn, showDateTime(showDate[2])).start();
-                        } else if (name.equals("열지수") && checkMonth(6, 9)) {
-                            thread(urls[3], date, 3);
-                            mAdapter.remove(0);
-                            new addThread(heatLifeIndex, "열지수", value[3], HEATLIFE_DIVIDE_VALUE, R.drawable.heatlife, showDateTime(showDate[3])).start();
-                        } else if (name.equals("감기가능지수") && checkMonth(9, 4)) {
-                            thread(urls[4], date, 4);
-                            mAdapter.remove(0);
-                            new addThread(inflWhoIndex, "감기가능지수", value[4], INFLWHOLIST_DIVIDE_VALUE, R.drawable.inflwholist, showDateTime(showDate[4])).start();
-                        } else if (name.equals("체감온도") && checkMonth(11, 3)) {
-                            thread(urls[5], date, 5);
-                            mAdapter.remove(0);
-                            new addThread(sensorytemLifeIndex, "체감온도", value[5], SENSORYTEM_DIVIDE_VALUE, R.drawable.seonsorytem, showDateTime(showDate[5])).start();
-                        } else if (name.equals("동파가능지수") && checkMonth(12, 2)) {
-                            thread(urls[6], date, 6);
-                            mAdapter.remove(0);
-                            new addThread(winterLifeIndex, "동파가능지수", value[6], WINTERLIFE_DIVIDE_VALUE, R.drawable.winterlife, showDateTime(showDate[6])).start();
-                        } else if (name.equals("천식폐질환가능지수")) {
-                            thread(urls[7], date, 7);
-                            mAdapter.remove(0);
-                            new addThread(asthmaWhoIndex, "천식폐질환가능지수", value[7], INFLWHOLIST_DIVIDE_VALUE, R.drawable.asthmawho, showDateTime(showDate[7])).start();
-                        } else if (name.equals("뇌졸중가능지수")) {
-                            thread(urls[8], date, 8);
-                            mAdapter.remove(0);
-                            new addThread(brainWhoIndex, "뇌졸중가능지수", value[8], INFLWHOLIST_DIVIDE_VALUE, R.drawable.brainwho, showDateTime(showDate[8])).start();
-                        } else if (name.equals("피부질환가능지수")) {
-                            thread(urls[9], date, 9);
-                            mAdapter.remove(0);
-                            new addThread(skinWhoIndex, "피부질환가능지수", value[9], INFLWHOLIST_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate[9])).start();
-                        } else
-                            Toast.makeText(getActivity(), "제공기간이 아닙니다.", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
-        }
-    }
 
     //리스트뷰(ListView)
     ///////////////////////////////////////////////////////////////
 
-    private class ViewHolder{
+    private class ViewHolder {
         TextView name;
         TextView value;
         TextView content;
@@ -356,16 +364,16 @@ public class WeatherFragment extends Fragment {
 
     }
 
-    private class ListViewAdapter extends BaseAdapter{
+    private class ListViewAdapter extends BaseAdapter {
         private Context mContext = null;
         private ArrayList<LifeIndex> mListData = new ArrayList<LifeIndex>();
 
-        public ListViewAdapter(Context mContext){
+        public ListViewAdapter(Context mContext) {
             super();
             this.mContext = mContext;
         }
 
-        public int getCount(){
+        public int getCount() {
             return mListData.size();
         }
 
@@ -381,23 +389,23 @@ public class WeatherFragment extends Fragment {
         }
 
         @Override
-        public  View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(int position, View convertView, ViewGroup parent) {
             ViewHolder holder;
-            if(convertView == null){
+            if (convertView == null) {
                 holder = new ViewHolder();
 
-                LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.listview_item, null);
 
-                holder.mainImage = (ImageView)convertView.findViewById(R.id.imageView1);
-                holder.indicator = (ImageView)convertView.findViewById(R.id.indicator1);
-                holder.name = (TextView)convertView.findViewById(R.id.textView1);
-                holder.value = (TextView)convertView.findViewById(R.id.textView6);
-                holder.content = (TextView)convertView.findViewById(R.id.textView9);
-                holder.deleteButton = (Button)convertView.findViewById(R.id.delete_Button);
+                holder.mainImage = (ImageView) convertView.findViewById(R.id.imageView1);
+                holder.indicator = (ImageView) convertView.findViewById(R.id.indicator1);
+                holder.name = (TextView) convertView.findViewById(R.id.textView1);
+                holder.value = (TextView) convertView.findViewById(R.id.textView6);
+                holder.content = (TextView) convertView.findViewById(R.id.textView9);
+                holder.deleteButton = (Button) convertView.findViewById(R.id.delete_Button);
                 holder.dateView = (TextView) convertView.findViewById(R.id.dateTextView);
                 holder.grade = (TextView) convertView.findViewById(R.id.gradeTextView);
-            }else{
+            } else {
                 holder = (ViewHolder) convertView.getTag();
             }
 
@@ -407,19 +415,19 @@ public class WeatherFragment extends Fragment {
             if (mData.mainImage != null) {
                 holder.mainImage.setVisibility(View.VISIBLE);
                 holder.mainImage.setImageDrawable(mData.mainImage);
-            }else{
+            } else {
                 holder.mainImage.setVisibility(View.GONE);
             }
 
             if (mData.indicator != null) {
                 holder.indicator.setVisibility(View.VISIBLE);
                 holder.indicator.setImageDrawable(mData.indicator);
-            }else{
+            } else {
                 holder.indicator.setVisibility(View.GONE);
             }
 
             holder.name.setText(mData.name);
-            holder.value.setText(inClass.getGradeToString(mData.getValue())+"("+(mData.getValue())+")");
+            holder.value.setText(inClass.getGradeToString(mData.getValue()) + "(" + (mData.getValue()) + ")");
             setColor(holder.value, inClass);
             holder.content.setText(inClass.getData());
             mData.grade = inClass.getGradeToInt();
@@ -441,7 +449,7 @@ public class WeatherFragment extends Fragment {
             holder.deleteButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    int position = (Integer)v.getTag();
+                    int position = (Integer) v.getTag();
                     new removeThread(position).start();
                 }
             });
@@ -460,7 +468,7 @@ public class WeatherFragment extends Fragment {
         };
 
         public void addItem(LifeIndex indexClass, Drawable mainImage, Drawable indicator,
-                            String name, String value, float divideValue, String date){
+                            String name, String value, float divideValue, String date) {
 
             LifeIndex addInfo = new LifeIndex();
             addInfo.indexClass = indexClass;
@@ -476,13 +484,12 @@ public class WeatherFragment extends Fragment {
             Collections.sort(mListData, cmpAsc);
         }
 
-        public void remove(int position){
+        public void remove(int position) {
             mListData.remove(position);
             mAdapter.notifyDataSetChanged();
         }
 
     }
-
 
 
     //메인(main)
@@ -497,39 +504,63 @@ public class WeatherFragment extends Fragment {
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("생활기상");
         ((AppCompatActivity) getActivity()).getSupportActionBar().setElevation(0);
         key = getResources().getString(R.string.key2);
+
         queryUrlUltra = "http://newsky2.kma.go.kr/iros/RetrieveLifeIndexService2/getUltrvLifeList?serviceKey="   //자외선지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         queryUrlDspls = "http://newsky2.kma.go.kr/iros/RetrieveLifeIndexService2/getDsplsLifeList?serviceKey="    //불쾌지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         queryUrlFsn = "http://newsky2.kma.go.kr/iros/RetrieveLifeIndexService2/getFsnLifeList?serviceKey="   //식중독지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         queryUrlHeatLife = "http://newsky2.kma.go.kr/iros/RetrieveLifeIndexService2/getHeatLifeList?serviceKey="  //열지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         queryInflWhoList = "http://newsky2.kma.go.kr/iros/RetrieveWhoIndexService2/getInflWhoList?serviceKey="  //감기가능지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         querySeonsorytemLife = "http://newsky2.kma.go.kr/iros/RetrieveLifeIndexService2/getSensorytemLifeList?serviceKey="  //체감온도
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         queryWinterLife = "http://newsky2.kma.go.kr/iros/RetrieveLifeIndexService2/getWinterLifeList?serviceKey="       //동파가능지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         queryasthmaWho = "http://newsky2.kma.go.kr/iros/RetrieveWhoIndexService2/getAsthmaWhoList?serviceKey="      //천식폐질환가능지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         querybrainWho = "http://newsky2.kma.go.kr/iros/RetrieveWhoIndexService2/getBrainWhoList?serviceKey="        //뇌졸중가능지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
         queryskinWho = "http://newsky2.kma.go.kr/iros/RetrieveWhoIndexService2/getSkinWhoList?serviceKey="      //피부질환가능지수
                 + key +
-                "&areaNo=1100000000&time=";
+                "&areaNo=" +
+                location +
+                "&time=";
+        Log.i("1",location);
         return inflater.inflate(R.layout.fragment_weather, container, false);
+    }
 
-
+    public void setLocation(String location){
+        this.location = location;
     }
 
     public void onViewCreated(View view, Bundle savedInstanceState) {
@@ -553,14 +584,15 @@ public class WeatherFragment extends Fragment {
         if (checkInternet() == true) {
             INTERNET_STATE = true;
         }
+
         mListView = (ListView) getView().findViewById(R.id.listView);
         mAdapter = new ListViewAdapter(getContext());
         mListView.setAdapter(mAdapter);
-
         loadPreferences();
-
-
+        progressBar = (ProgressBar) getView().findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.GONE);
     }
+
     public static int getScreenWidth() {
         return Resources.getSystem().getDisplayMetrics().widthPixels;
     }
@@ -578,16 +610,21 @@ public class WeatherFragment extends Fragment {
             public void run() {
                 // TODO Auto-generated method stub
                 if (INTERNET_STATE == true) {
-                    String[] data=getWeather(url, date);
-                    showDate[index] = data[0];
-                    value[index] = data[1];  //생활지수
+                    try {
+                        String[] data = getWeather(url, date);
+                        showDate[index] = data[0];
+                        value[index] = data[1];  //생활지수
+                    } catch (Exception e) {
+                        Toast.makeText(getActivity(), "서버가 응답이 없습니다.", Toast.LENGTH_SHORT).show();
+                        e.printStackTrace();
+                    }
                 }
             }
         });
         t.start();
         try {
             t.join();
-        }catch (Exception e){
+        } catch (Exception e) {
 
         }
         threadEnd = true;
@@ -599,7 +636,19 @@ public class WeatherFragment extends Fragment {
         drawable.setColor(lifeIndex.getColor());
     }
 
-    public String[] getWeather(String queryUrl, String date) {
+    CountDownTimer countDownTimer = new CountDownTimer(5 * 1000, 1000) {
+        public void onTick(long millisUntilFinished) {
+        }
+
+        public void onFinish() {
+            timeout = false;
+        }
+    };
+
+
+    public String[] getWeather(String queryUrl, String date) throws Exception {
+        Looper.prepare();
+        countDownTimer.start();
         String temp = null;
         StringBuffer buffer = new StringBuffer();
         queryUrl += date;
@@ -632,12 +681,12 @@ public class WeatherFragment extends Fragment {
                         if (tag.equals("today")) {
                             xpp.next();
                             temp = xpp.getText();
-                            if(temp!=null){
+                            if (temp != null) {
                                 buffer.append(temp);
                                 buffer.append("\n");
                             }
                         }
-                        if (tag.equals("tomorrow") && temp==null) {
+                        if (tag.equals("tomorrow") && temp == null) {
                             xpp.next();
                             buffer.append(xpp.getText());
                             buffer.append("\n");
@@ -650,14 +699,16 @@ public class WeatherFragment extends Fragment {
                         break;
                 }
                 eventType = xpp.next();
+                if (timeout == false)
+                    throw new Exception("timeout");
             }
             if (buffer.toString().trim().equals("")) {
-                throw new Exception("");
-
+                throw new Exception();
             }
         } catch (Exception e) {
             // TODO Auto-generated catch block
-            return getWeather(queryUrl, getYesterday()); //공백일 경우 어제 날짜로 다시 받아온다.
+            throw e;
+            //getWeather(queryUrl, getYesterday()); //공백일 경우 어제 날짜로 다시 받아온다.
         }
         return buffer.toString().trim().split(",");
     }
@@ -679,7 +730,8 @@ public class WeatherFragment extends Fragment {
         SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHH", Locale.KOREA);
         return df.format(new Date());
     }
-    public String showDateTime(String showDate)  {
+
+    public String showDateTime(String showDate) {
         SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHH", Locale.KOREA);
         Date date = new Date();
         try {
@@ -687,29 +739,28 @@ public class WeatherFragment extends Fragment {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd("+ getDayOfWeek(showDate,"yyyyMMddHH")+") HH:00", Locale.KOREA);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd(" + getDayOfWeek(showDate, "yyyyMMddHH") + ") HH:00", Locale.KOREA);
         return sdf.format(date);
     }
 
-   public boolean checkMonth(int startMonth, int endMonth){
-       Calendar calendar= Calendar.getInstance();
-       int currentMonth = calendar.get(Calendar.MONTH)+1;
-       if (startMonth < endMonth) {
-           if (startMonth <= currentMonth && currentMonth <= endMonth) {
-               return true;
-           }
-           else
-               return false;
-       } else {
-           if (startMonth <= currentMonth || currentMonth <= endMonth) {
-               return true;
-           }
-           else
-               return false;
-       }
+    public boolean checkMonth(int startMonth, int endMonth) {
+        Calendar calendar = Calendar.getInstance();
+        int currentMonth = calendar.get(Calendar.MONTH) + 1;
+        if (startMonth < endMonth) {
+            if (startMonth <= currentMonth && currentMonth <= endMonth) {
+                return true;
+            } else
+                return false;
+        } else {
+            if (startMonth <= currentMonth || currentMonth <= endMonth) {
+                return true;
+            } else
+                return false;
+        }
 
-   }
-    public String getDayOfWeek(String showDate, String dateType){
+    }
+
+    public String getDayOfWeek(String showDate, String dateType) {
         String day = "";
         SimpleDateFormat dateFormat = new SimpleDateFormat(dateType);
         Date nDate = null;
@@ -746,7 +797,6 @@ public class WeatherFragment extends Fragment {
                 day = "토";
                 break;
         }
-        Log.i("day",day+"");
         return day;
     }
 
@@ -764,36 +814,37 @@ public class WeatherFragment extends Fragment {
             // not connected to the internet
         }
     }
+
     //값 불러오기
     private void loadPreferences() {
         SharedPreferences pref = getContext().getSharedPreferences("weatherPref", Context.MODE_PRIVATE);
         for (int i = 0; i < showDate.length; i++) {
-            showDate[i] = pref.getString("date"+i, "");
+            showDate[i] = pref.getString("date" + i, "");
         }
-        String[] valueArray= {"ultra", "dspls", "fsn", "heat","inflwho","seonsorytem", "winter", "asthma", "brain", "skin"};
-        for(int i = 0; i<=valueArray.length-1;i++){
-            value[i] = pref.getString(valueArray[i],"");
+        String[] valueArray = {"ultra", "dspls", "fsn", "heat", "inflwho", "seonsorytem", "winter", "asthma", "brain", "skin"};
+        for (int i = 0; i <= valueArray.length - 1; i++) {
+            value[i] = pref.getString(valueArray[i], "");
         }
         for (int i = 0; ; i++) {
             String str = pref.getString(String.valueOf(i), "");
 
             if (!str.equals("")) {
-                if (str.equals("자외선지수")&&value[0]!=null) {
+                if (str.equals("자외선지수") && value[0] != null) {
                     new addThread(ultraIndex, "자외선지수", value[0], ULTRA_DIVIDE_VALUE, R.drawable.ultra, showDateTime(showDate[0])).start();
                 }
-                if (str.equals("불쾌지수")&&value[1]!=null) {
+                if (str.equals("불쾌지수") && value[1] != null) {
                     new addThread(dsplsIndex, "불쾌지수", value[1], DSPLS_DIVIDE_VALUE, R.drawable.dspls, showDateTime(showDate[1])).start();
                 }
-                if (str.equals("식중독지수")&&value[2]!=null) {
+                if (str.equals("식중독지수") && value[2] != null) {
                     new addThread(fsnIndex, "식중독지수", value[2], FSN_DIVIDE_VALUE, R.drawable.fsn, showDateTime(showDate[2])).start();
                 }
-                if (str.equals("열지수")&&value[3]!=null) {
+                if (str.equals("열지수") && value[3] != null) {
                     new addThread(heatLifeIndex, "열지수", value[3], HEATLIFE_DIVIDE_VALUE, R.drawable.heatlife, showDateTime(showDate[3])).start();
                 }
-                if (str.equals("감기가능지수")&&value[4]!=null) {
+                if (str.equals("감기가능지수") && value[4] != null) {
                     new addThread(inflWhoIndex, "감기가능지수", value[4], INFLWHOLIST_DIVIDE_VALUE, R.drawable.inflwholist, showDateTime(showDate[4])).start();
                 }
-                if (str.equals("체감온도")&&value[5]!=null) {
+                if (str.equals("체감온도") && value[5] != null) {
                     new addThread(sensorytemLifeIndex, "체감온도", value[5], SENSORYTEM_DIVIDE_VALUE, R.drawable.seonsorytem, showDateTime(showDate[5])).start();
                 }
                 if (str.equals("동파가능지수") && value[6] != null) {
@@ -808,22 +859,21 @@ public class WeatherFragment extends Fragment {
                 if (str.equals("피부질환가능지수") && value[9] != null) {
                     new addThread(skinWhoIndex, "피부질환가능지수", value[9], INFLWHOLIST_DIVIDE_VALUE, R.drawable.skinwho, showDateTime(showDate[9])).start();
                 }
-            }
-            else
+            } else
                 break;
         }
-            SharedPreferences.Editor editor = pref.edit();
-            editor.clear();
-            editor.commit();
+        SharedPreferences.Editor editor = pref.edit();
+        editor.clear();
+        editor.commit();
     }
 
     // 값 저장하기
-    private void savePreferences(){
+    private void savePreferences() {
         SharedPreferences pref = getActivity().getSharedPreferences("weatherPref", getActivity().MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
 
-        for(int i = 0; i<mAdapter.getCount(); i++){
-            Log.i("저장",String.valueOf(i)+mAdapter.getItem(i).name);
+        for (int i = 0; i < mAdapter.getCount(); i++) {
+            Log.i("저장", String.valueOf(i) + mAdapter.getItem(i).name);
             editor.putString(String.valueOf(i), mAdapter.getItem(i).name);
         }
 
@@ -838,7 +888,7 @@ public class WeatherFragment extends Fragment {
         editor.putString("brain", value[8]);
         editor.putString("skin", value[9]);
         for (int i = 0; i < showDate.length; i++) {
-            editor.putString("date"+i, showDate[i]);
+            editor.putString("date" + i, showDate[i]);
         }
         editor.commit();
     }
@@ -847,7 +897,7 @@ public class WeatherFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if(value!=null) {
+        if (value != null) {
             savePreferences();
         }
     }
