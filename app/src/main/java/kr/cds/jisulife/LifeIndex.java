@@ -17,7 +17,6 @@ public class LifeIndex extends AppCompatActivity implements Comparator{
     public float divideValue;
     private String date;
     public int grade;
-
     public void setValue(String value) {
         this.value = value;
     }

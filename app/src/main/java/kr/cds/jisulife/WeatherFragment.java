@@ -50,6 +50,16 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.Locale;
 
+import kr.cds.jisulife.lifeIndex.AsthmaWhoIndex;
+import kr.cds.jisulife.lifeIndex.BrainWhoIndex;
+import kr.cds.jisulife.lifeIndex.DsplsIndex;
+import kr.cds.jisulife.lifeIndex.FsnIndex;
+import kr.cds.jisulife.lifeIndex.HeatLifeIndex;
+import kr.cds.jisulife.lifeIndex.InflWhoListIndex;
+import kr.cds.jisulife.lifeIndex.SensorytmeLifeIndex;
+import kr.cds.jisulife.lifeIndex.SkinWhoIndex;
+import kr.cds.jisulife.lifeIndex.UltraIndex;
+
 public class WeatherFragment extends Fragment {
 
     private static final float ULTRA_DIVIDE_VALUE = 0.44f;

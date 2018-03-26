@@ -684,7 +684,7 @@
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="_2">서울지역 모기발생 상황을 지수화하여 모기발생 단계별 시민행동요령을 알려주는 일일 모기발생 예보서비스임</string>
-    <string name="_4">총 4단계로 발령하며, 단계가 높아질수록 모기발생의 우려가 높음 \n *1단계:쾌적단계 &lt; 2단계:관심단계 &lt; 3단계:주의단계 &lt; 4단계:불쾌단계</string>
+    <string name="_4"><![CDATA[총 4단계로 발령하며, 단계가 높아질수록 모기발생의 우려가 높음 \n *1단계:쾌적단계 < 2단계:관심단계 < 3단계:주의단계 < 4단계:불쾌단계]]></string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>

@@ -13,7 +13,7 @@
         android:label="Tests for kr.cds.jisulife"
         android:targetPackage="kr.cds.jisulife" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 
