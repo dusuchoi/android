@@ -25,9 +25,12 @@ public class DsplsIndex extends LifeIndex {
                     "▶ 수분을 미리 충분히 섭취"};
     @Override
     public void setValue(String value) {
-        super.setValue(value);
+        this.value = Integer.valueOf(value);
     }
-
+    @Override
+    public String getValue() {
+        return String.valueOf(value);
+    }
     @Override
     public int getGradeToInt() {
         return this.grade;

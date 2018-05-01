@@ -8,7 +8,7 @@ import java.util.Comparator;
 public class LifeIndex extends AppCompatActivity implements Comparator{
 
 
-    private String value;
+    private int value;
     private int color;
     public String name;
     public Drawable mainImage;
@@ -17,12 +17,13 @@ public class LifeIndex extends AppCompatActivity implements Comparator{
     public float divideValue;
     private String date;
     public int grade;
+
     public void setValue(String value) {
-        this.value = value;
+        this.value = Integer.valueOf(value);
     }
 
     public String getValue() {
-        return value;
+        return String.valueOf(value);
     }
     public String getDate() {
         return date;
@@ -32,7 +33,6 @@ public class LifeIndex extends AppCompatActivity implements Comparator{
     }
 
     public int getGradeToInt() {
-
         return grade;
     }
 

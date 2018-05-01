@@ -22,12 +22,14 @@ public class AsthmaWhoIndex  extends LifeIndex {
 
     public AsthmaWhoIndex() {
     }
-
     @Override
     public void setValue(String value) {
         this.value = Integer.valueOf(value);
     }
-
+    @Override
+    public String getValue() {
+        return String.valueOf(value);
+    }
     @Override
     public int getGradeToInt() {
         return this.grade;
@@ -36,7 +38,6 @@ public class AsthmaWhoIndex  extends LifeIndex {
 
     @Override
     public String getGradeToString(String data) {
-
         value = Integer.valueOf(data);
         if (value == 0) {
             color= Color.rgb(229,229,229);

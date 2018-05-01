@@ -21,7 +21,10 @@ public class SkinWhoIndex extends LifeIndex {
     public void setValue(String value) {
         this.value = Integer.valueOf(value);
     }
-
+    @Override
+    public String getValue() {
+        return String.valueOf(value);
+    }
     @Override
     public int getGradeToInt() {
         return this.grade;

@@ -20,6 +20,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -51,6 +52,7 @@ public class MosquitoFragment extends Fragment{
     String date;
     String grade;
     public static mosquitoEntry mosquitoEntry;
+    private ProgressBar progressBar;
 
     public void shareKakao()
     {
@@ -91,6 +93,7 @@ public class MosquitoFragment extends Fragment{
         ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("모기예보");
         ((AppCompatActivity)getActivity()).getSupportActionBar().setElevation(0);
         return inflater.inflate(R.layout.fragment_mosquito, container, false);
+
     }
 
 
@@ -108,6 +111,8 @@ public class MosquitoFragment extends Fragment{
         imageView = (ImageView) getView().findViewById(R.id.indicator);
         scrollView = (ScrollView) getView().findViewById(R.id.backGround);
         key1 = getResources().getString(R.string.key1);
+        progressBar = (ProgressBar) getView().findViewById(R.id.progressBar2);
+        progressBar.setVisibility(View.GONE);
 
         if(checkInternet()==false){
             INTERNET_STATE=false;
@@ -115,7 +120,6 @@ public class MosquitoFragment extends Fragment{
                 Toast.makeText(getActivity(),"네트워크가 연결되지 않았습니다.", Toast.LENGTH_SHORT).show();
 
         }
-
         thread();
     }
 
@@ -124,7 +128,7 @@ public class MosquitoFragment extends Fragment{
             @Override
             public void run() {
                 // TODO Auto-generated method stub
-                if(INTERNET_STATE==true) {
+                if(INTERNET_STATE) {
                     value = getXmlData(getDateString()); //모기지수
                 }
                 else
@@ -132,6 +136,7 @@ public class MosquitoFragment extends Fragment{
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        progressBar.setVisibility(View.VISIBLE);
                         // TODO Auto-generated method stub
                         date=getDateStringToShow();
                         textView2.setText(date);
@@ -153,6 +158,7 @@ public class MosquitoFragment extends Fragment{
                         anim.setDuration(1000);
                         anim.setFillAfter(true);
                         imageView.startAnimation(anim);
+                        progressBar.setVisibility(View.GONE);
                     }
                 });
             }

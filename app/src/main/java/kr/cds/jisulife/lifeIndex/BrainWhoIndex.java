@@ -1,6 +1,7 @@
 package kr.cds.jisulife.lifeIndex;
 
 import android.graphics.Color;
+import android.widget.Toast;
 
 import kr.cds.jisulife.LifeIndex;
 
@@ -25,7 +26,10 @@ public class BrainWhoIndex extends LifeIndex {
     public void setValue(String value) {
         this.value = Integer.valueOf(value);
     }
-
+    @Override
+    public String getValue() {
+        return String.valueOf(value);
+    }
     @Override
     public int getGradeToInt() {
         return this.grade;
@@ -34,25 +38,25 @@ public class BrainWhoIndex extends LifeIndex {
 
     @Override
     public String getGradeToString(String data) {
-
         value = Integer.valueOf(data);
         if (value == 0) {
-            color= Color.rgb(229,229,229);
-            grade=0;
+            color = Color.rgb(229, 229, 229);
+            grade = 0;
             return "낮음";
         } else if (value == 1) {
-            color=Color.rgb(254,217,142);
-            grade=1;
+            color = Color.rgb(254, 217, 142);
+            grade = 1;
             return "보통";
         } else if (value == 2) {
-            color=Color.rgb(253,141,60);
-            grade=2;
+            color = Color.rgb(253, 141, 60);
+            grade = 2;
             return "높음";
         } else
-            color=Color.rgb(240,59,32);
-        grade=3;
+            color = Color.rgb(240, 59, 32);
+            grade = 3;
         return "매우높음";
     }
+
     @Override
     public int getColor(){
         return color;

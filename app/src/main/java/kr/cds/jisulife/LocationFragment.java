@@ -18,6 +18,7 @@ import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +40,8 @@ public class LocationFragment extends Fragment {
     HashMap<String, String> map;
     EditText editTextFilter;
     ListViewAdapter adapter;
-
+    InputMethodManager  imm;
+    RelativeLayout rl;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -61,10 +63,10 @@ public class LocationFragment extends Fragment {
 
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        rl = (RelativeLayout) getView().findViewById(R.id.layout);
         map = new HashMap<String, String>();
         bundle = new Bundle();
-
-        //adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1);
+        imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
         adapter = new ListViewAdapter();
 
         listview = (ListView) getView().findViewById(R.id.listview1);
@@ -72,10 +74,15 @@ public class LocationFragment extends Fragment {
         editTextFilter = (EditText) getView().findViewById(R.id.editTextFilter);
         listview.setAdapter(adapter);
 
+        rl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imm.hideSoftInputFromWindow(textView.getWindowToken(), 0);
+            }
+        });
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View v, int position, long id) {
-                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(textView.getWindowToken(), 0);
                 chooseLocation = ((ListViewItem)parent.getAdapter().getItem(position)).getTitle();
                 textView.setText(chooseLocation);
@@ -84,7 +91,8 @@ public class LocationFragment extends Fragment {
             }
         });
 
-        loadAddressData();
+        loadAddressData();//주소 불러오기
+
         editTextFilter.addTextChangedListener(new TextWatcher() {
             @Override
             public void afterTextChanged(Editable edit) {
@@ -186,7 +194,6 @@ public class LocationFragment extends Fragment {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            final int pos = position;
             final Context context = parent.getContext();
             if (convertView == null) {
                 LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -240,10 +247,7 @@ public class LocationFragment extends Fragment {
 
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
-
                 filteredItemList = (ArrayList<ListViewItem>) results.values ;
-
-                // notify
                 if (results.count > 0) {
                     notifyDataSetChanged() ;
                 } else {

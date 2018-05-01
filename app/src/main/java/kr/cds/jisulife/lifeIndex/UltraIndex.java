@@ -26,11 +26,13 @@ public class UltraIndex extends LifeIndex {
             "▶ 외출 시 긴 소매 옷, 모자, 선글라스 이용\n" +
             "▶ 자외선 차단제를 정기적으로 발라야 함"};
 
-    @Override
     public void setValue(String value) {
         this.value = Integer.valueOf(value);
     }
 
+    public String getValue() {
+        return String.valueOf(value);
+    }
     @Override
     public int getGradeToInt() {
         return this.grade;
