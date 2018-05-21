@@ -18,11 +18,18 @@ subprojects {
         maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
     }
 }
+allprojects {
+
+}
 
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
     }
+
 }
 
 task clean(type: Delete) {

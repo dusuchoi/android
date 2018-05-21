@@ -208,8 +208,6 @@ public class LocationFragment extends Fragment {
             return convertView;
         }
 
-
-
         @Override
         public Filter getFilter() {
             if (filter == null) {

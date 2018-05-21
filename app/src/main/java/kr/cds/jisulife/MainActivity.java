@@ -1,6 +1,5 @@
 package kr.cds.jisulife;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -16,6 +15,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.tsengvn.typekit.TypekitContextWrapper;
 
 public class MainActivity extends AppCompatActivity
@@ -71,6 +73,12 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
               getSupportActionBar().setTitle("");
 
+        MobileAds.initialize(this, "ca-app-pub-4712412246131543~2639273924");
+        AdView mAdView = (AdView)this.findViewById(R.id.adView);
+
+         AdRequest adRequest = new AdRequest.Builder().build();
+
+         mAdView.loadAd(adRequest);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();   //최초화면
 
         weatherFragment = new WeatherFragment();

@@ -1,6 +1,5 @@
 package kr.cds.jisulife;
 
-
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -30,6 +29,10 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.kakao.kakaolink.KakaoLink;
 import com.kakao.kakaolink.KakaoTalkLinkMessageBuilder;
 import org.xmlpull.v1.XmlPullParser;
@@ -58,7 +61,7 @@ import kr.cds.jisulife.lifeIndex.WinterLifeIndex;
 
 public class WeatherFragment extends Fragment {
 
-    private static final float ULTRA_DIVIDE_VALUE = 0.44f;
+    private static final float ULTRA_DIVIDE_VALUE = 0.39f;
     private static final float DSPLS_DIVIDE_VALUE = 8.0f;
     private static final float FSN_DIVIDE_VALUE = 6.0f;
     private static final float HEATLIFE_DIVIDE_VALUE = 9.9f;
@@ -335,7 +338,6 @@ public class WeatherFragment extends Fragment {
         private int image;
         private String date;
 
-
         AddThread(LifeIndex lifeIndex, String name, float divideValue, int image, String date) {
             this.lifeIndex = lifeIndex;
             this.name = name;
@@ -465,7 +467,7 @@ public class WeatherFragment extends Fragment {
                     (Animation.RELATIVE_TO_SELF, 0,   // fromXDelta
                             Animation.RELATIVE_TO_SELF, Float.valueOf(inClass.getValue()) / mData.divideValue,  // toXDelta
                             Animation.RELATIVE_TO_SELF, 0,    //fromYDelta
-                            Animation.RELATIVE_TO_SELF, 0); //toYDelta
+                            Animation.RELATIVE_TO_SELF, 0);  //toYDelta
 
             anim.setDuration(1000);
             anim.setFillAfter(true);
@@ -579,6 +581,7 @@ public class WeatherFragment extends Fragment {
                 "&areaNo=" +
                 location +
                 "&time=";
+
         return inflater.inflate(R.layout.fragment_weather, container, false);
     }
 
@@ -614,6 +617,8 @@ public class WeatherFragment extends Fragment {
         loadPreferences();
         progressBar = (ProgressBar) getView().findViewById(R.id.progressBar);
         progressBar.setVisibility(View.GONE);
+
+
     }
     /*
     public static int getScreenWidth() {
