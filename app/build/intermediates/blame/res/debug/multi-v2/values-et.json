@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\lpg50\\Desktop\\ChoiDusu\\Application\\JisuLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
+            "outputFile": "C:\\Users\\lpg50\\Desktop\\ChoiDusu\\Application\\JisuLife\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
             "map": [
                 {
                     "source": "C:\\Users\\lpg50\\.gradle\\caches\\transforms-2\\files-2.1\\18e80d731c301c8fbe3932d260570e14\\res\\values-et\\values-et.xml",

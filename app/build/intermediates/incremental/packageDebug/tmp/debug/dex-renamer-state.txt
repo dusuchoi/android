@@ -1,4 +1,4 @@
-#Mon Jun 28 20:44:41 KST 2021
-base.0=C\:\\Users\\lpg50\\Desktop\\ChoiDusu\\Application\\JisuLife\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Mon Jun 28 22:05:43 KST 2021
+base.0=C\:\\Users\\lpg50\\Desktop\\ChoiDusu\\Application\\JisuLife\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_bad">#ff863e</color>
+    <color name="bg_check">#868686</color>
+    <color name="bg_good">#3e85e7</color>
+    <color name="bg_normal">#3ee765</color>
+    <color name="bg_toobad">#e7493e</color>
+    <color name="text_bad">#ffc12d</color>
+    <color name="text_check">#373737</color>
+    <color name="text_good">#0adfff</color>
+    <color name="text_normal">#2ee23f</color>
+    <color name="text_toobad">#f5d5df</color>
+    <string name="app_name">AirQuality</string>
+    <string name="bad">나쁨</string>
+    <string name="check">점검중</string>
+    <string name="good">좋음</string>
+    <string name="normal">보통</string>
+    <string name="toobad">매우나쁨</string>
+    <style name="PopupDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="air_btn_type_a">
+        <item name="android:background">@drawable/selector_air_btn_type_a</item>
+    </style>
+    <style name="air_btn_type_b">
+        <item name="android:background">@drawable/selector_air_btn_type_b</item>
+    </style>
+</resources>

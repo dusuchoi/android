@@ -1680,6 +1680,7 @@ drawable air_grade_progress_bar3
 drawable air_grade_progress_bar4
 drawable air_mini_type_background
 drawable airbutton
+drawable asthmawho
 drawable avd_hide_password
 drawable avd_show_password
 drawable background
@@ -1689,6 +1690,7 @@ drawable big_check
 drawable big_good
 drawable big_normal
 drawable big_toobad
+drawable brainwho
 drawable btn_air_a
 drawable btn_air_a_active
 drawable btn_air_b
@@ -1755,6 +1757,7 @@ drawable ic_search_black_24dp
 drawable icon_pin_gray
 drawable icon_pin_white
 drawable indicator
+drawable inflwholist
 drawable kakao_account_button_background
 drawable kakao_account_logo
 drawable kakao_cancel_button_background
@@ -1815,6 +1818,7 @@ drawable selector_btn_place
 drawable selector_check_bg
 drawable seonsorytem
 drawable side_nav_bar
+drawable skinwho
 drawable small_bad
 drawable small_check
 drawable small_good

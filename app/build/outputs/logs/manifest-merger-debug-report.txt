@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
 MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\90096f21a011716c1c26b5e8637d0766\AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cf8e0a66530cb35f2d80c8b99ba3b43a\AndroidManifest.xml:2:1-11:12
@@ -16,7 +16,7 @@ MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.g
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\5d812684eb55d2fd8f0669d6b2992710\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:16:1-23:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\eaabf68074eece5cd82a88188a0bb344\AndroidManifest.xml:17:1-22:12
-MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:2:1-31:12
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:2:1-31:12
 MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c1964cbd1363f3cd09254fbba9375b10\AndroidManifest.xml:2:1-15:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2128f33bbacf89f74ea7324f7f7ea4f6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cde70c72de116b8f15536311f824ab5f\AndroidManifest.xml:17:1-22:12
@@ -53,39 +53,39 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\lpg50\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\fe6c09598d46cf232fc553416d7824ab\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\08ddf0163bc9bfe32a537233a537c82a\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\a015e6ed30749bf6bce0c0d917e40aae\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
 	package
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:3:5-30
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:1-62:12
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:19:5-66
 MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:19:5-66
-MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:11:5-67
-MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:11:5-67
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:11:5-67
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:6:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:20:5-78
 MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:20:5-78
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:8:5-60:19
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:8:5-60:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cf8e0a66530cb35f2d80c8b99ba3b43a\AndroidManifest.xml:9:5-20
@@ -102,8 +102,8 @@ MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\5d812684eb55d2fd8f0669d6b2992710\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:19:5-21:19
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:19:5-21:19
-MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:13:5-29:19
-MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:13:5-29:19
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:13:5-29:19
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:13:5-29:19
 MERGED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d486d55743e7a68f88794da2ba82d2e7\AndroidManifest.xml:24:5-25:19
@@ -111,101 +111,101 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\lp
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:13:9-50
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:13:9-50
 	android:icon
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:11:9-45
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:11:9-45
 	android:allowBackup
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:16:9-40
 	android:usesCleartextTraffic
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:15:9-44
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:15:9-44
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:9:9-40
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:9:9-40
 activity#kr.cds.jisulife.MainActivity
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:17:9-39:20
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:17:9-39:20
 	android:screenOrientation
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:19:13-49
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:19:13-49
 	android:theme
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:20:13-56
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:20:13-56
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:18:13-41
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:18:13-41
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:21:13-23:73
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:21:13-23:73
 	android:value
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:23:17-70
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:23:17-70
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:22:17-62
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:22:17-62
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:27:27-74
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/kakaolink_host+data:scheme:@string/kakao_scheme
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:29:13-38:29
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:29:13-38:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:32:17-76
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:32:17-76
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:32:27-73
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:32:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:33:17-78
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:33:17-78
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:33:27-75
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:33:27-75
 data
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:35:17-37:61
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:35:17-37:61
 	android:host
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:36:21-58
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:36:21-58
 	android:scheme
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:37:21-58
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:37:21-58
 activity#com.google.android.gms.ads.AdActivity
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:40:9-43:64
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:40:9-43:64
 MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:25:9-232
 MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:25:9-232
 	android:configChanges
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:42:13-122
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:42:13-122
 	android:theme
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:43:13-61
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:43:13-61
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:41:13-65
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:41:13-65
 meta-data#com.kakao.sdk.AppKey
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:45:9-47:53
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:45:9-47:53
 	android:value
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:47:13-50
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:47:13-50
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:46:13-48
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:46:13-48
 receiver#kr.cds.jisulife.mosquitoAppWidget
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:50:9-58:20
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:50:9-58:20
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:50:19-52
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:50:19-52
 intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:51:13-53:29
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:51:13-53:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:52:17-84
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:52:17-84
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:52:25-81
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:52:25-81
 meta-data#android.appwidget.provider
-ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:55:13-57:68
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:55:13-57:68
 	android:resource
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:57:17-65
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:57:17-65
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:56:17-58
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml:56:17-58
 uses-sdk
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
 MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\90096f21a011716c1c26b5e8637d0766\AndroidManifest.xml:11:5-13:41
 MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\90096f21a011716c1c26b5e8637d0766\AndroidManifest.xml:11:5-13:41
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:20:5-44
@@ -230,8 +230,8 @@ MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg5
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:17:5-42
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\eaabf68074eece5cd82a88188a0bb344\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\eaabf68074eece5cd82a88188a0bb344\AndroidManifest.xml:20:5-44
-MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:7:5-9:41
-MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:7:5-9:41
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:7:5-9:41
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:7:5-9:41
 MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c1964cbd1363f3cd09254fbba9375b10\AndroidManifest.xml:11:5-13:41
 MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c1964cbd1363f3cd09254fbba9375b10\AndroidManifest.xml:11:5-13:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2128f33bbacf89f74ea7324f7f7ea4f6\AndroidManifest.xml:20:5-44
@@ -304,16 +304,16 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\lpg50\.gradle\cache
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\08ddf0163bc9bfe32a537233a537c82a\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\a015e6ed30749bf6bce0c0d917e40aae\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\a015e6ed30749bf6bce0c0d917e40aae\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
 ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:26:9-131
 	android:theme
@@ -329,26 +329,26 @@ ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gr
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:19:19-85
 activity#kr.go.seoul.airquality.AirQualityDetailTypeA
-ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:17:9-19:52
+ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:17:9-19:52
 	android:screenOrientation
-		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:19:13-49
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:19:13-49
 	android:name
-		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:18:13-72
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:18:13-72
 activity#kr.go.seoul.airquality.AirQualityDetailTypeB
-ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:20:9-22:52
+ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:20:9-22:52
 	android:screenOrientation
-		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:22:13-49
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:22:13-49
 	android:name
-		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:21:13-72
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:21:13-72
 activity#kr.go.seoul.airquality.AirQualityMapTypeA
-ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:23:9-25:52
+ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:23:9-25:52
 	android:screenOrientation
-		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:25:13-49
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:25:13-49
 	android:name
-		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:24:13-69
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:24:13-69
 activity#kr.go.seoul.airquality.AirQualityMapTypeB
-ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:26:9-28:52
+ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:26:9-28:52
 	android:screenOrientation
-		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:28:13-49
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:28:13-49
 	android:name
-		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:27:13-69
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\android\airquality-release\build\.transforms\f4886abde1407fe5e4fa3592e8b15708\AndroidManifest.xml:27:13-69

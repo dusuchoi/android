@@ -33,18 +33,18 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int kakao_account_button_background = 0x7f0800ad;
-        public static final int kakao_account_logo = 0x7f0800ae;
-        public static final int kakao_cancel_button_background = 0x7f0800af;
-        public static final int kakao_default_profile_image = 0x7f0800b0;
-        public static final int kakao_editable_profile = 0x7f0800b1;
-        public static final int kakao_login_bar = 0x7f0800b2;
-        public static final int kakao_login_button_background = 0x7f0800b3;
-        public static final int kakao_login_symbol = 0x7f0800b4;
-        public static final int kakao_profile_boxbg = 0x7f0800b5;
-        public static final int kakaoaccount_icon = 0x7f0800b6;
-        public static final int kakaostory_icon = 0x7f0800b7;
-        public static final int kakaotalk_icon = 0x7f0800b8;
+        public static final int kakao_account_button_background = 0x7f0800b0;
+        public static final int kakao_account_logo = 0x7f0800b1;
+        public static final int kakao_cancel_button_background = 0x7f0800b2;
+        public static final int kakao_default_profile_image = 0x7f0800b3;
+        public static final int kakao_editable_profile = 0x7f0800b4;
+        public static final int kakao_login_bar = 0x7f0800b5;
+        public static final int kakao_login_button_background = 0x7f0800b6;
+        public static final int kakao_login_symbol = 0x7f0800b7;
+        public static final int kakao_profile_boxbg = 0x7f0800b8;
+        public static final int kakaoaccount_icon = 0x7f0800b9;
+        public static final int kakaostory_icon = 0x7f0800ba;
+        public static final int kakaotalk_icon = 0x7f0800bb;
     }
     public static final class id {
         private id() {}
