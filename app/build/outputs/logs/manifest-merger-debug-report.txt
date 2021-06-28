@@ -1,325 +1,354 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
-MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\kakaolink-1.1.7.aar\92f17060153c0e6bdae886b35fa2a124\AndroidManifest.xml:2:1-15:12
-MERGED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:2:1-31:12
-MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\3ce305df72dd31fcc769265a494b5554\AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\832ce1fe10398a3891bfa650a784636b\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\63e05413275fc3226f3a5b6d502ed3fa\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b20baf792c0c153dff31fd8b1f9f77d6\AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.android.gms:play-services-ads:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-10.0.1.aar\593ef1c5e851fefc44d1e69164d378ee\AndroidManifest.xml:16:1-18:12
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:16:1-28:12
-MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.0.1.aar\992d5973c4d10f8a2d2115d5cead6faa\AndroidManifest.xml:16:1-19:12
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.0.1.aar\f6043ce6b9755e50a2358a724d4dc22c\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\12d54fe5f4decaaa5a5aca7f0cc77288\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\bdc11c6ce9f032a1138fde7d00b07761\AndroidManifest.xml:16:1-23:12
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\d43b0f70af274cd4de0ac733713d9fc2\AndroidManifest.xml:17:1-31:12
-MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\util-1.1.7.aar\a181938e500cc76c4f78355b9b53acff\AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\ed64fa1ba0f7f235e253a05bf55ad3bc\AndroidManifest.xml:17:1-26:12
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\27d5e534d46ebb897346b14e3e569aca\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\4479c2cfccbb4152142d4972bd8c6f9b\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\7a3fb76080ce1d18298e80319c47f326\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\efd9de1ec6c55bbf53deede194c6f7bc\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\742f297fb1cac1d38495b0eefe358e02\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\6dd01d9c17d568e45dac36006b938157\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\621953ff0d12bea1493b3e5a5643ce75\AndroidManifest.xml:17:1-31:12
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\90096f21a011716c1c26b5e8637d0766\AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cf8e0a66530cb35f2d80c8b99ba3b43a\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6304bc8c8d515829fb1859f7ab0fa0cf\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-ads:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\28d7287f540413d6d78cdd99404c3dd1\AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:16:1-28:12
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\16f66f9b8022113b951dd4d99a6ebad9\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2961061eaab1691d78cd2583e0947282\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\5d812684eb55d2fd8f0669d6b2992710\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:16:1-23:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\eaabf68074eece5cd82a88188a0bb344\AndroidManifest.xml:17:1-22:12
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:2:1-31:12
+MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c1964cbd1363f3cd09254fbba9375b10\AndroidManifest.xml:2:1-15:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2128f33bbacf89f74ea7324f7f7ea4f6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cde70c72de116b8f15536311f824ab5f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2ed15b821966e01d72ecf1e5223cbc38\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6df9250958c5dc568b5416b1aa31f8f7\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\4e77f8975c2ffdc52bbb426b8dcbaef6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c0c0ca61dbbe2774be80f950f8f6f776\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\f80244b2152b674028362286aad17882\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\ffea307517653cf022751b88b81a19c2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\900bea17da3aef2caff5ea71f9961224\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\f90411747e254104b256721fd45d438c\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\de4b99ed77d9f6374ab5730a40139782\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\042f2b0bb799f8aabd6b075579e68a74\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\54992bf60554291193ae8cfd816ac3a6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\db1bc9fca118aa3c9e05a1499943adcf\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\e951eac8a9c2aec1ccea515e1e61c3f8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\597af0ec56ea1acbd4326aad217d1cff\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\721ecf1068cd5e953f9debc179cac024\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\331c9c9dd72fd0dedf3d357e7bf6bea2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d353670e9b01fe9c5848d783a477621e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\436e5e1df18d34572e0ec859ac405d5b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bdabed0fe6c187f022028faa6098757c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d56c7877a8566604bd66d861acea8331\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d486d55743e7a68f88794da2ba82d2e7\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d7ab794582cba55bc75d53aef9df76a6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\07727db4a4c45131ff6efa8dda442fb0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\3d06643d352b277b96c3d5407b0a594b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6ec5805db6233b354d17f8a5acafc3a5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\9678b6ac6159fb573c8ca84170890b63\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1b02373838e028866eb288fc80af3a91\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\7ee7da26fc79aa14d45075345916fb2a\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1abecb0fa94762d06cb85783c82fb435\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\fe6c09598d46cf232fc553416d7824ab\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\08ddf0163bc9bfe32a537233a537c82a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\a015e6ed30749bf6bce0c0d917e40aae\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
 	package
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:3:5-30
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:1-61:12
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:1-62:12
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:11:5-67
-MERGED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:19:5-66
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:19:5-66
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:19:5-66
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:11:5-67
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:6:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:20:5-78
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:20:5-78
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:8:5-59:19
-MERGED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:13:5-29:19
-MERGED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:13:5-29:19
-MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\3ce305df72dd31fcc769265a494b5554\AndroidManifest.xml:11:5-20
-MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\3ce305df72dd31fcc769265a494b5554\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\832ce1fe10398a3891bfa650a784636b\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\832ce1fe10398a3891bfa650a784636b\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\63e05413275fc3226f3a5b6d502ed3fa\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\63e05413275fc3226f3a5b6d502ed3fa\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b20baf792c0c153dff31fd8b1f9f77d6\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b20baf792c0c153dff31fd8b1f9f77d6\AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:23:5-27:19
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:23:5-27:19
-MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.0.1.aar\992d5973c4d10f8a2d2115d5cead6faa\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.0.1.aar\992d5973c4d10f8a2d2115d5cead6faa\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.0.1.aar\f6043ce6b9755e50a2358a724d4dc22c\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.0.1.aar\f6043ce6b9755e50a2358a724d4dc22c\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\12d54fe5f4decaaa5a5aca7f0cc77288\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\12d54fe5f4decaaa5a5aca7f0cc77288\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\bdc11c6ce9f032a1138fde7d00b07761\AndroidManifest.xml:19:5-21:19
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\bdc11c6ce9f032a1138fde7d00b07761\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\d43b0f70af274cd4de0ac733713d9fc2\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\d43b0f70af274cd4de0ac733713d9fc2\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\27d5e534d46ebb897346b14e3e569aca\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\27d5e534d46ebb897346b14e3e569aca\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\4479c2cfccbb4152142d4972bd8c6f9b\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\4479c2cfccbb4152142d4972bd8c6f9b\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\7a3fb76080ce1d18298e80319c47f326\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\7a3fb76080ce1d18298e80319c47f326\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\efd9de1ec6c55bbf53deede194c6f7bc\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\efd9de1ec6c55bbf53deede194c6f7bc\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\742f297fb1cac1d38495b0eefe358e02\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\742f297fb1cac1d38495b0eefe358e02\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\6dd01d9c17d568e45dac36006b938157\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\6dd01d9c17d568e45dac36006b938157\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\621953ff0d12bea1493b3e5a5643ce75\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\621953ff0d12bea1493b3e5a5643ce75\AndroidManifest.xml:29:5-20
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:8:5-60:19
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cf8e0a66530cb35f2d80c8b99ba3b43a\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cf8e0a66530cb35f2d80c8b99ba3b43a\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\16f66f9b8022113b951dd4d99a6ebad9\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\16f66f9b8022113b951dd4d99a6ebad9\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2961061eaab1691d78cd2583e0947282\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2961061eaab1691d78cd2583e0947282\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\5d812684eb55d2fd8f0669d6b2992710\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\5d812684eb55d2fd8f0669d6b2992710\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:19:5-21:19
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:13:5-29:19
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:13:5-29:19
+MERGED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d486d55743e7a68f88794da2ba82d2e7\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d486d55743e7a68f88794da2ba82d2e7\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:13:9-50
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:13:9-50
 	android:icon
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:11:9-45
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:11:9-45
 	android:allowBackup
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:16:9-40
+	android:usesCleartextTraffic
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:15:9-44
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:9:9-40
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:9:9-40
 activity#kr.cds.jisulife.MainActivity
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:16:9-35:20
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:17:9-39:20
 	android:screenOrientation
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:18:13-49
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:19:13-49
 	android:theme
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:19:13-56
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:20:13-56
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:17:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:20:13-24:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:21:17-69
-	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:21:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:23:17-77
-	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:23:27-74
-intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:25:13-34:29
-action#android.intent.action.VIEW
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:26:17-69
-	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:26:25-66
-category#android.intent.category.DEFAULT
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:28:17-76
-	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:28:27-73
-category#android.intent.category.BROWSABLE
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:29:17-78
-	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:29:27-75
-data
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:31:17-33:61
-	android:host
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:32:21-58
-	android:scheme
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:33:21-58
-activity#com.google.android.gms.ads.AdActivity
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:36:9-40:64
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:25:9-232
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:25:9-232
-	android:configChanges
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:39:13-122
-	android:theme
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:40:13-61
-	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:38:13-65
-meta-data#com.kakao.sdk.AppKey
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:42:9-44:53
-	android:value
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:44:13-50
-	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:43:13-48
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:18:13-41
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:45:9-47:69
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\bdc11c6ce9f032a1138fde7d00b07761\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\bdc11c6ce9f032a1138fde7d00b07761\AndroidManifest.xml:20:9-121
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:21:13-23:73
 	android:value
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:47:13-66
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:23:17-70
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:46:13-58
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:22:17-62
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:24:13-28:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:27:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/kakaolink_host+data:scheme:@string/kakao_scheme
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:29:13-38:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:30:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:32:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:33:17-78
+	android:name
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:33:27-75
+data
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:35:17-37:61
+	android:host
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:36:21-58
+	android:scheme
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:37:21-58
+activity#com.google.android.gms.ads.AdActivity
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:40:9-43:64
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:25:9-232
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:42:13-122
+	android:theme
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:43:13-61
+	android:name
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:41:13-65
+meta-data#com.kakao.sdk.AppKey
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:45:9-47:53
+	android:value
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:47:13-50
+	android:name
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:46:13-48
 receiver#kr.cds.jisulife.mosquitoAppWidget
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:49:9-57:20
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:50:9-58:20
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:49:19-52
-intent-filter#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:50:13-52:29
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:50:19-52
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:51:13-53:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:51:17-84
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:52:17-84
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:51:25-81
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:52:25-81
 meta-data#android.appwidget.provider
-ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:54:13-56:68
+ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:55:13-57:68
 	android:resource
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:56:17-65
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:57:17-65
 	android:name
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml:55:17-58
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml:56:17-58
 uses-sdk
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\kakaolink-1.1.7.aar\92f17060153c0e6bdae886b35fa2a124\AndroidManifest.xml:11:5-13:41
-MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\kakaolink-1.1.7.aar\92f17060153c0e6bdae886b35fa2a124\AndroidManifest.xml:11:5-13:41
-MERGED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:7:5-9:41
-MERGED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\3ce305df72dd31fcc769265a494b5554\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tsengvn:typekit:1.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\typekit-1.0.1.aar\3ce305df72dd31fcc769265a494b5554\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\832ce1fe10398a3891bfa650a784636b\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\832ce1fe10398a3891bfa650a784636b\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\63e05413275fc3226f3a5b6d502ed3fa\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\63e05413275fc3226f3a5b6d502ed3fa\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b20baf792c0c153dff31fd8b1f9f77d6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b20baf792c0c153dff31fd8b1f9f77d6\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-10.0.1.aar\593ef1c5e851fefc44d1e69164d378ee\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-ads:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-10.0.1.aar\593ef1c5e851fefc44d1e69164d378ee\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:22:5-42
-MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:22:5-42
-MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.0.1.aar\992d5973c4d10f8a2d2115d5cead6faa\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.0.1.aar\992d5973c4d10f8a2d2115d5cead6faa\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.0.1.aar\f6043ce6b9755e50a2358a724d4dc22c\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.0.1.aar\f6043ce6b9755e50a2358a724d4dc22c\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\12d54fe5f4decaaa5a5aca7f0cc77288\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.0.1.aar\12d54fe5f4decaaa5a5aca7f0cc77288\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\bdc11c6ce9f032a1138fde7d00b07761\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.0.1.aar\bdc11c6ce9f032a1138fde7d00b07761\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\d43b0f70af274cd4de0ac733713d9fc2\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\d43b0f70af274cd4de0ac733713d9fc2\AndroidManifest.xml:21:5-23:54
-MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\util-1.1.7.aar\a181938e500cc76c4f78355b9b53acff\AndroidManifest.xml:11:5-13:41
-MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\util-1.1.7.aar\a181938e500cc76c4f78355b9b53acff\AndroidManifest.xml:11:5-13:41
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\ed64fa1ba0f7f235e253a05bf55ad3bc\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\ed64fa1ba0f7f235e253a05bf55ad3bc\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\27d5e534d46ebb897346b14e3e569aca\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\27d5e534d46ebb897346b14e3e569aca\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\4479c2cfccbb4152142d4972bd8c6f9b\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\4479c2cfccbb4152142d4972bd8c6f9b\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\7a3fb76080ce1d18298e80319c47f326\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\7a3fb76080ce1d18298e80319c47f326\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\efd9de1ec6c55bbf53deede194c6f7bc\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\efd9de1ec6c55bbf53deede194c6f7bc\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\742f297fb1cac1d38495b0eefe358e02\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\742f297fb1cac1d38495b0eefe358e02\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\6dd01d9c17d568e45dac36006b938157\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\6dd01d9c17d568e45dac36006b938157\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\621953ff0d12bea1493b3e5a5643ce75\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\621953ff0d12bea1493b3e5a5643ce75\AndroidManifest.xml:21:5-23:58
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:23:9-59
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\90096f21a011716c1c26b5e8637d0766\AndroidManifest.xml:11:5-13:41
+MERGED from [com.kakao.sdk:kakaolink:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\90096f21a011716c1c26b5e8637d0766\AndroidManifest.xml:11:5-13:41
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\75f3801b4c243844fd8debb9dc63ef55\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cf8e0a66530cb35f2d80c8b99ba3b43a\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cf8e0a66530cb35f2d80c8b99ba3b43a\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6304bc8c8d515829fb1859f7ab0fa0cf\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6304bc8c8d515829fb1859f7ab0fa0cf\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-ads:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\28d7287f540413d6d78cdd99404c3dd1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\28d7287f540413d6d78cdd99404c3dd1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\16f66f9b8022113b951dd4d99a6ebad9\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\16f66f9b8022113b951dd4d99a6ebad9\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2961061eaab1691d78cd2583e0947282\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2961061eaab1691d78cd2583e0947282\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\5d812684eb55d2fd8f0669d6b2992710\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\5d812684eb55d2fd8f0669d6b2992710\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bd8fa2089a41fdc811db486e581af89c\AndroidManifest.xml:17:5-42
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\eaabf68074eece5cd82a88188a0bb344\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\eaabf68074eece5cd82a88188a0bb344\AndroidManifest.xml:20:5-44
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:7:5-9:41
+MERGED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c1964cbd1363f3cd09254fbba9375b10\AndroidManifest.xml:11:5-13:41
+MERGED from [com.kakao.sdk:util:1.1.7] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c1964cbd1363f3cd09254fbba9375b10\AndroidManifest.xml:11:5-13:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2128f33bbacf89f74ea7324f7f7ea4f6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2128f33bbacf89f74ea7324f7f7ea4f6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cde70c72de116b8f15536311f824ab5f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\cde70c72de116b8f15536311f824ab5f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2ed15b821966e01d72ecf1e5223cbc38\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\2ed15b821966e01d72ecf1e5223cbc38\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6df9250958c5dc568b5416b1aa31f8f7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6df9250958c5dc568b5416b1aa31f8f7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\4e77f8975c2ffdc52bbb426b8dcbaef6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\4e77f8975c2ffdc52bbb426b8dcbaef6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c0c0ca61dbbe2774be80f950f8f6f776\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c0c0ca61dbbe2774be80f950f8f6f776\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\f80244b2152b674028362286aad17882\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\f80244b2152b674028362286aad17882\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\ffea307517653cf022751b88b81a19c2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\ffea307517653cf022751b88b81a19c2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\900bea17da3aef2caff5ea71f9961224\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\900bea17da3aef2caff5ea71f9961224\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\f90411747e254104b256721fd45d438c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\f90411747e254104b256721fd45d438c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\de4b99ed77d9f6374ab5730a40139782\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\de4b99ed77d9f6374ab5730a40139782\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\042f2b0bb799f8aabd6b075579e68a74\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\042f2b0bb799f8aabd6b075579e68a74\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\54992bf60554291193ae8cfd816ac3a6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\54992bf60554291193ae8cfd816ac3a6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\db1bc9fca118aa3c9e05a1499943adcf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\db1bc9fca118aa3c9e05a1499943adcf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\e951eac8a9c2aec1ccea515e1e61c3f8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\e951eac8a9c2aec1ccea515e1e61c3f8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\597af0ec56ea1acbd4326aad217d1cff\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\597af0ec56ea1acbd4326aad217d1cff\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\721ecf1068cd5e953f9debc179cac024\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\721ecf1068cd5e953f9debc179cac024\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\331c9c9dd72fd0dedf3d357e7bf6bea2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\331c9c9dd72fd0dedf3d357e7bf6bea2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d353670e9b01fe9c5848d783a477621e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d353670e9b01fe9c5848d783a477621e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\436e5e1df18d34572e0ec859ac405d5b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\436e5e1df18d34572e0ec859ac405d5b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bdabed0fe6c187f022028faa6098757c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\bdabed0fe6c187f022028faa6098757c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d56c7877a8566604bd66d861acea8331\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d56c7877a8566604bd66d861acea8331\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\18e80d731c301c8fbe3932d260570e14\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d486d55743e7a68f88794da2ba82d2e7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d486d55743e7a68f88794da2ba82d2e7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d7ab794582cba55bc75d53aef9df76a6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\d7ab794582cba55bc75d53aef9df76a6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\07727db4a4c45131ff6efa8dda442fb0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\07727db4a4c45131ff6efa8dda442fb0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\3d06643d352b277b96c3d5407b0a594b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\3d06643d352b277b96c3d5407b0a594b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6ec5805db6233b354d17f8a5acafc3a5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\6ec5805db6233b354d17f8a5acafc3a5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\9678b6ac6159fb573c8ca84170890b63\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\9678b6ac6159fb573c8ca84170890b63\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1b02373838e028866eb288fc80af3a91\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1b02373838e028866eb288fc80af3a91\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\7ee7da26fc79aa14d45075345916fb2a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\7ee7da26fc79aa14d45075345916fb2a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1abecb0fa94762d06cb85783c82fb435\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1abecb0fa94762d06cb85783c82fb435\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\fe6c09598d46cf232fc553416d7824ab\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\fe6c09598d46cf232fc553416d7824ab\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\08ddf0163bc9bfe32a537233a537c82a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\08ddf0163bc9bfe32a537233a537c82a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\a015e6ed30749bf6bce0c0d917e40aae\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\a015e6ed30749bf6bce0c0d917e40aae\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\lpg50\Desktop\JisuLife\app\src\main\AndroidManifest.xml
-activity#kr.go.seoul.airquality.AirQualityDetailTypeA
-ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:17:9-19:52
-	android:screenOrientation
-		ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:19:13-49
-	android:name
-		ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:18:13-72
-activity#kr.go.seoul.airquality.AirQualityDetailTypeB
-ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:20:9-22:52
-	android:screenOrientation
-		ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:22:13-49
-	android:name
-		ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:21:13-72
-activity#kr.go.seoul.airquality.AirQualityMapTypeA
-ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:23:9-25:52
-	android:screenOrientation
-		ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:25:13-49
-	android:name
-		ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:24:13-69
-activity#kr.go.seoul.airquality.AirQualityMapTypeB
-ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:26:9-28:52
-	android:screenOrientation
-		ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:28:13-49
-	android:name
-		ADDED from [:airquality-release] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\airquality-release.aar\f7fc265ac2c714252f784397679e27b0\AndroidManifest.xml:27:13-69
-meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\832ce1fe10398a3891bfa650a784636b\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\832ce1fe10398a3891bfa650a784636b\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b20baf792c0c153dff31fd8b1f9f77d6\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\b20baf792c0c153dff31fd8b1f9f77d6\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\d43b0f70af274cd4de0ac733713d9fc2\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\d43b0f70af274cd4de0ac733713d9fc2\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\ed64fa1ba0f7f235e253a05bf55ad3bc\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\ed64fa1ba0f7f235e253a05bf55ad3bc\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\27d5e534d46ebb897346b14e3e569aca\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\27d5e534d46ebb897346b14e3e569aca\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\4479c2cfccbb4152142d4972bd8c6f9b\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\4479c2cfccbb4152142d4972bd8c6f9b\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\7a3fb76080ce1d18298e80319c47f326\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\7a3fb76080ce1d18298e80319c47f326\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\efd9de1ec6c55bbf53deede194c6f7bc\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\efd9de1ec6c55bbf53deede194c6f7bc\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\742f297fb1cac1d38495b0eefe358e02\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\742f297fb1cac1d38495b0eefe358e02\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\6dd01d9c17d568e45dac36006b938157\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\6dd01d9c17d568e45dac36006b938157\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\621953ff0d12bea1493b3e5a5643ce75\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\621953ff0d12bea1493b3e5a5643ce75\AndroidManifest.xml:25:5-27:34
-	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:27:9-31
-	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\b4dfeafb2d628b01cdc280910283905e\AndroidManifest.xml:26:9-47
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:26:9-131
+ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:26:9-131
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:26:92-129
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:26:92-129
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.0.1.aar\c7687b84ba051193940ba2bc28204e4f\AndroidManifest.xml:26:19-91
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\1d770a67b867ff986eebcf376f4f18a0\AndroidManifest.xml:26:19-91
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-1\files-1.1\play-services-base-10.0.1.aar\a85cdd339da0aa41a4be254858504139\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\lpg50\.gradle\caches\transforms-2\files-2.1\c403161dfc549ebd5d6c7d1282ade88f\AndroidManifest.xml:19:19-85
+activity#kr.go.seoul.airquality.AirQualityDetailTypeA
+ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:17:9-19:52
+	android:screenOrientation
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:19:13-49
+	android:name
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:18:13-72
+activity#kr.go.seoul.airquality.AirQualityDetailTypeB
+ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:20:9-22:52
+	android:screenOrientation
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:22:13-49
+	android:name
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:21:13-72
+activity#kr.go.seoul.airquality.AirQualityMapTypeA
+ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:23:9-25:52
+	android:screenOrientation
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:25:13-49
+	android:name
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:24:13-69
+activity#kr.go.seoul.airquality.AirQualityMapTypeB
+ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:26:9-28:52
+	android:screenOrientation
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:28:13-49
+	android:name
+		ADDED from [:airquality-release] C:\Users\lpg50\Desktop\ChoiDusu\Application\JisuLife\airquality-release\build\.transforms\833167eefc69ea49db8ad232183da8c9\AndroidManifest.xml:27:13-69

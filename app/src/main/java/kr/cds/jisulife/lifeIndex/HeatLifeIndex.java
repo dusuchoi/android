@@ -2,8 +2,6 @@ package kr.cds.jisulife.lifeIndex;
 
 import android.graphics.Color;
 
-import kr.cds.jisulife.LifeIndex;
-
 public class HeatLifeIndex extends LifeIndex {
 
     private int value;
@@ -48,15 +46,15 @@ public class HeatLifeIndex extends LifeIndex {
             color= Color.rgb(229,229,229);
             grade=0;
             return "낮음";
-        } else if (value >= 32 && value < 41) {
+        } else if (value < 41) {
             color=Color.rgb(254,217,142);
             grade=1;
             return "보통";
-        } else if (value >= 41 && value < 54) {
+        } else if (value < 54) {
             color=Color.rgb(253,141,60);
             grade=2;
             return "높음";
-        } else if (value >= 54 && value < 66) {
+        } else if (value < 66) {
             color=Color.rgb(240,59,32);
             grade=3;
             return "매우높음";

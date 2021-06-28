@@ -2,8 +2,6 @@ package kr.cds.jisulife.lifeIndex;
 
 import android.graphics.Color;
 
-import kr.cds.jisulife.LifeIndex;
-
 public class SkinWhoIndex extends LifeIndex {
 
     private int value;

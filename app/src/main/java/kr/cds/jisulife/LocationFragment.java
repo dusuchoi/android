@@ -3,9 +3,9 @@ package kr.cds.jisulife;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -264,14 +264,14 @@ public class LocationFragment extends Fragment {
         textView.setText(chooseLocation);
         SharedPreferences.Editor editor = pref.edit();
         editor.clear();
-        editor.commit();
+        editor.apply();
     }
 
     private void savePreferences() {
         SharedPreferences pref = getActivity().getSharedPreferences("locationPref", getActivity().MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
         editor.putString("location", chooseLocation);
-        editor.commit();
+        editor.apply();
     }
 
     @Override

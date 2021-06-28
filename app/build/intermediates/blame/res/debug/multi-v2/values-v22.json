@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\lpg50\\Desktop\\JisuLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
+            "outputFile": "C:\\Users\\lpg50\\Desktop\\ChoiDusu\\Application\\JisuLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lpg50\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\832ce1fe10398a3891bfa650a784636b\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\lpg50\\.gradle\\caches\\transforms-2\\files-2.1\\6304bc8c8d515829fb1859f7ab0fa0cf\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

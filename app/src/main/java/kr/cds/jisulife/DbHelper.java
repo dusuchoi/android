@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class DbHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "mosquitoEntry.db";
+    private static final String DATABASE_NAME = "MosquitoEntry.db";
     private static DbHelper sInstance;
 
     public static final String TABLE_NAME_ENTRIES = "mosquitoEntry";
@@ -69,22 +69,22 @@ public class DbHelper extends SQLiteOpenHelper {
         }
     }
 
-    synchronized mosquitoEntry fetchEntryByIndex(long rowIndex) {
-        mosquitoEntry exerciseMosquitoEntry = new mosquitoEntry();
+    synchronized MosquitoEntry fetchEntryByIndex(long rowIndex) {
+        MosquitoEntry mosquitoEntry = new MosquitoEntry();
         Cursor cursor;
         SQLiteDatabase database = getReadableDatabase();
 
         cursor = database.query(TABLE_NAME_ENTRIES, null,
                 KEY_ROWID + " = " + rowIndex, null, null, null, null);
         cursor.moveToFirst();
-        exerciseMosquitoEntry.setmId(cursor.getLong(0));
-        exerciseMosquitoEntry.setmGrade(cursor.getString(1));
-        exerciseMosquitoEntry.setDefence_activity(cursor.getString(2));
-        exerciseMosquitoEntry.setAggressive_activity(cursor.getString(3));
-        exerciseMosquitoEntry.setOrganization_activity(cursor.getString(4));
+        mosquitoEntry.setmId(cursor.getLong(0));
+        mosquitoEntry.setmGrade(cursor.getString(1));
+        mosquitoEntry.setDefence_activity(cursor.getString(2));
+        mosquitoEntry.setAggressive_activity(cursor.getString(3));
+        mosquitoEntry.setOrganization_activity(cursor.getString(4));
 
         cursor.close();
-        return exerciseMosquitoEntry;
+        return mosquitoEntry;
     }
 }
 

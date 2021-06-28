@@ -3,8 +3,6 @@ package kr.cds.jisulife.lifeIndex;
 
 import android.graphics.Color;
 
-import kr.cds.jisulife.LifeIndex;
-
 public class SensorytmeLifeIndex extends LifeIndex {
 
     private int value;
@@ -50,11 +48,11 @@ public class SensorytmeLifeIndex extends LifeIndex {
             color= Color.rgb(229,229,229);
             grade=0;
             return "관심";
-        } else if (value < -10 && value >= -25) {
+        } else if (value >= -25) {
             color=Color.rgb(254,217,142);
             grade=1;
             return "주의";
-        } else if (value < -25 && value >= -45) {
+        } else if (value >= -45) {
             color=Color.rgb(253,141,60);
             grade=2;
             return "경고";

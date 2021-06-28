@@ -2,8 +2,6 @@ package kr.cds.jisulife.lifeIndex;
 
 import android.graphics.Color;
 
-import kr.cds.jisulife.LifeIndex;
-
 public class FsnIndex extends LifeIndex {
     private int value;
     private int color;
@@ -42,11 +40,11 @@ public class FsnIndex extends LifeIndex {
             color= Color.rgb(229,229,229);
             grade=0;
             return "관심";
-        } else if (value >= 55 && value < 71) {
+        } else if (value < 71) {
             color=Color.rgb(254,217,142);
             grade=1;
             return "주의";
-        } else if (value >= 71 && value < 86) {
+        } else if (value < 86) {
             color=Color.rgb(253,141,60);
             grade=2;
             return "경고";

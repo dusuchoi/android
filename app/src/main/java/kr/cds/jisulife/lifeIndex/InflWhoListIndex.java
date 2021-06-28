@@ -2,8 +2,6 @@ package kr.cds.jisulife.lifeIndex;
 
 import android.graphics.Color;
 
-import kr.cds.jisulife.LifeIndex;
-
 public class InflWhoListIndex  extends LifeIndex {
 
     private int value;

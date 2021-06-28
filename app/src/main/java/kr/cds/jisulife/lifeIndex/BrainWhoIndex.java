@@ -1,9 +1,6 @@
 package kr.cds.jisulife.lifeIndex;
 
 import android.graphics.Color;
-import android.widget.Toast;
-
-import kr.cds.jisulife.LifeIndex;
 
 public class BrainWhoIndex extends LifeIndex {
 

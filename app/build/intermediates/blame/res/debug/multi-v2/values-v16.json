@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\lpg50\\Desktop\\JisuLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\lpg50\\Desktop\\ChoiDusu\\Application\\JisuLife\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lpg50\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\832ce1fe10398a3891bfa650a784636b\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\lpg50\\.gradle\\caches\\transforms-2\\files-2.1\\6304bc8c8d515829fb1859f7ab0fa0cf\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lpg50\\.gradle\\caches\\transforms-2\\files-2.1\\18e80d731c301c8fbe3932d260570e14\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,6 +1,6 @@
 package kr.cds.jisulife;
 
-public class mosquitoEntry {
+public class MosquitoEntry {
     private Long id;
     private String mGrade;
     private String defence_activity;

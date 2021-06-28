@@ -59,7 +59,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:lineSpacingExtra="3sp"
-            android:text="자외선지수는 태양고도가 최대인 남중시간 때 지표에 도달하는 자외선 B(UV-B)영역의 복사량을 지수로 환산한 것 &#10;서비스 기간 : 3월 ~ 11월 &#10;예보 시간 : 일 2회(6시, 18시)&#10;"
+            android:text="자외선지수는 태양고도가 최대인 남중시간 때 지표에 도달하는 자외선 B(UV-B)영역의 복사량을 지수로 환산한 것 &#10;서비스 기간 : 연중 &#10;예보 시간 : 일 2회(6시, 18시)&#10;"
             android:textSize="15sp" />
 
         <TextView
@@ -270,7 +270,7 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="67dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_weight="2.08"
@@ -304,7 +304,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:autoLink="web"
-            android:text="http://health.seoul.go.kr/mosquito"
+            android:text="https://news.seoul.go.kr/welfare/mosquito"
             android:textAllCaps="false"
             android:textColorLink="@color/colorPrimary" />
 

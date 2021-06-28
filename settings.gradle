@@ -1,1 +1,1 @@
-include ':app', ':airquality-release'
+include ':app' ,'airquality-release'
